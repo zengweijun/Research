@@ -108,4 +108,8 @@ public class ArrayList<E> extends AbList<E> {
 		string.append("\n]");
 		return string.toString();
 	}
+	@Override
+	public E remove(E element) {
+		return remove(indexOf(element));
+	}
 }

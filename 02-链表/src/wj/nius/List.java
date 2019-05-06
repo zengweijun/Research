@@ -67,6 +67,13 @@ public interface List<E> {
 	 * @return 被删除的元素
 	 */
 	E remove(int index);
+	
+	/**
+	 * 删除元素
+	 * @param element
+	 * @return
+	 */
+	E remove(E element);
 
 	/**
 	 * 根据元素获取在表中的索引位置

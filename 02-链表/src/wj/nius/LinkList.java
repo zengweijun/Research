@@ -49,6 +49,7 @@ public class LinkList<E> extends AbList<E> {
 		// 3.让前一个元素的next指向当前元素即完成 prev.next = node
 		// 4. 0 位置的元素特殊处理
 		
+		validateIndexForAdd(index);
 		if (index == 0) {
 			first = new Node<E>(element, first);
 		} else {
@@ -56,6 +57,11 @@ public class LinkList<E> extends AbList<E> {
 			prev.next = new Node<E>(element, prev.next);
 		}
 		size++;
+	}
+	
+	@Override
+	public E remove(E element) {
+		return remove(indexOf(element));
 	}
 
 	@Override
@@ -65,6 +71,8 @@ public class LinkList<E> extends AbList<E> {
 		// 2.prev.next = prev.next.next
 		// 3.对0位置元素单独处理
 		
+		// 此处first 有可能是null,会造成空指针异常
+		validateIndex(index);
 		Node<E> node = first.next;
 		if (index == 0) {
 			first.next = first.next.next;
