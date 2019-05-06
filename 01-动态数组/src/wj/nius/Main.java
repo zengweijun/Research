@@ -83,8 +83,12 @@ public class Main {
 	public static void main(String[] args) {
 //		test1();
 //		test2();
-		test3();
+//		test3();
 //		test4();
+
+		System.out.println("start");
+		Person person = new Person(10, "ssss");
+		System.out.println("end");
 	}
 
 }
