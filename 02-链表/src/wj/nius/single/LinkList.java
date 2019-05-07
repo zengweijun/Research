@@ -1,4 +1,6 @@
-package wj.nius;
+package wj.nius.single;
+
+import wj.nius.AbList;
 
 /**
  * 单向列表
@@ -71,15 +73,14 @@ public class LinkList<E> extends AbList<E> {
 		// 2.prev.next = prev.next.next
 		// 3.对0位置元素单独处理
 		
-		// 此处first 有可能是null,会造成空指针异常
 		validateIndex(index);
-		Node<E> node = first.next;
+		Node<E> node = first;
 		if (index == 0) {
-			first.next = first.next.next;
+			first = first.next;
 		} else {
 			Node<E> prev = node(index - 1);
-			node  = prev.next;
-			prev.next = node.next;
+			node = prev.next;
+			prev.next = node.next; // prev.next = prev.next.next;  
 		}
 		size--;
 		return node.element;

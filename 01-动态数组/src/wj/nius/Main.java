@@ -79,16 +79,26 @@ public class Main {
 			list.add(8, 88); 
 			System.out.println(list);
 	}
+	 
+	public static void test5() {
+		ArrayList<Integer> list = new ArrayList<Integer>();
+		for (int i = 0; i < 50; i++) {
+			list.add(i);
+		}
+		
+		while (list.size() != 0) {
+			list.remove(0);
+		}
+		
+	}
 	
 	public static void main(String[] args) {
 //		test1();
 //		test2();
 //		test3();
 //		test4();
+		test5();
 
-		System.out.println("start");
-		Person person = new Person(10, "ssss");
-		System.out.println("end");
 	}
 
 }

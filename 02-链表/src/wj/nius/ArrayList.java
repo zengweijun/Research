@@ -27,6 +27,10 @@ public class ArrayList<E> extends AbList<E> {
 			elements[i] = null;
 		}
 		size = 0;
+		
+		if (elements != null && elements.length > DEFAULT_CAPACITY) {
+			elements = (E[]) new Object[DEFAULT_CAPACITY];  
+		}
 	}
 
 	public E get(int index) {
