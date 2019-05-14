@@ -7,7 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		55049F9B2289A161009D9EA4 /* BBSTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 55049F9A2289A161009D9EA4 /* BBSTree.m */; };
+		55049F9E2289A585009D9EA4 /* RBTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 55049F9D2289A585009D9EA4 /* RBTree.m */; };
+		55049FA12289C03E009D9EA4 /* RBTree+Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 55049FA02289C03E009D9EA4 /* RBTree+Test.m */; };
 		5573D5F822808E3000C0A39D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5573D5F722808E3000C0A39D /* main.m */; };
+		5573D61C2283C79F00C0A39D /* Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = 5573D61A2283C79F00C0A39D /* Stack.m */; };
+		5573D61D2283C79F00C0A39D /* Queue.m in Sources */ = {isa = PBXBuildFile; fileRef = 5573D61B2283C79F00C0A39D /* Queue.m */; };
+		5573D6242283CA3800C0A39D /* BSTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 5573D6232283CA3800C0A39D /* BSTree.m */; };
+		5573D6322283D7BD00C0A39D /* MJInorderPrinter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5573D6292283D7BD00C0A39D /* MJInorderPrinter.m */; };
+		5573D6332283D7BD00C0A39D /* MJLevelOrderPrinter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5573D62B2283D7BD00C0A39D /* MJLevelOrderPrinter.m */; };
+		5573D6342283D7BD00C0A39D /* MJPrinter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5573D62C2283D7BD00C0A39D /* MJPrinter.m */; };
+		5573D6352283D7BD00C0A39D /* MJBinaryTrees.m in Sources */ = {isa = PBXBuildFile; fileRef = 5573D6302283D7BD00C0A39D /* MJBinaryTrees.m */; };
+		5573D6362283D7BD00C0A39D /* NSString+Trees.m in Sources */ = {isa = PBXBuildFile; fileRef = 5573D6312283D7BD00C0A39D /* NSString+Trees.m */; };
+		5573D6422284814900C0A39D /* BinaryTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 5573D6412284814900C0A39D /* BinaryTree.m */; };
+		5573D6452284839A00C0A39D /* BSTree+Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 5573D6442284839A00C0A39D /* BSTree+Test.m */; };
+		55AC882B2286B1CB00F64504 /* AVLTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 55AC882A2286B1CB00F64504 /* AVLTree.m */; };
+		55AC882E2286F1A600F64504 /* AVLTree+Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 55AC882D2286F1A600F64504 /* AVLTree+Test.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +38,39 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		55049F992289A161009D9EA4 /* BBSTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBSTree.h; sourceTree = "<group>"; };
+		55049F9A2289A161009D9EA4 /* BBSTree.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BBSTree.m; sourceTree = "<group>"; };
+		55049F9C2289A585009D9EA4 /* RBTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RBTree.h; sourceTree = "<group>"; };
+		55049F9D2289A585009D9EA4 /* RBTree.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RBTree.m; sourceTree = "<group>"; };
+		55049F9F2289C03E009D9EA4 /* RBTree+Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RBTree+Test.h"; sourceTree = "<group>"; };
+		55049FA02289C03E009D9EA4 /* RBTree+Test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "RBTree+Test.m"; sourceTree = "<group>"; };
 		5573D5F422808E3000C0A39D /* Algorithm-OC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Algorithm-OC"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5573D5F722808E3000C0A39D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5573D6182283C79E00C0A39D /* Stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stack.h; sourceTree = "<group>"; };
+		5573D6192283C79F00C0A39D /* Queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Queue.h; sourceTree = "<group>"; };
+		5573D61A2283C79F00C0A39D /* Stack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stack.m; sourceTree = "<group>"; };
+		5573D61B2283C79F00C0A39D /* Queue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Queue.m; sourceTree = "<group>"; };
+		5573D6222283CA3800C0A39D /* BSTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSTree.h; sourceTree = "<group>"; };
+		5573D6232283CA3800C0A39D /* BSTree.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BSTree.m; sourceTree = "<group>"; };
+		5573D6262283D7BD00C0A39D /* MJBinaryTrees.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJBinaryTrees.h; sourceTree = "<group>"; };
+		5573D6282283D7BD00C0A39D /* MJLevelOrderPrinter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJLevelOrderPrinter.h; sourceTree = "<group>"; };
+		5573D6292283D7BD00C0A39D /* MJInorderPrinter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJInorderPrinter.m; sourceTree = "<group>"; };
+		5573D62A2283D7BD00C0A39D /* MJPrinter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPrinter.h; sourceTree = "<group>"; };
+		5573D62B2283D7BD00C0A39D /* MJLevelOrderPrinter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJLevelOrderPrinter.m; sourceTree = "<group>"; };
+		5573D62C2283D7BD00C0A39D /* MJPrinter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPrinter.m; sourceTree = "<group>"; };
+		5573D62D2283D7BD00C0A39D /* MJInorderPrinter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJInorderPrinter.h; sourceTree = "<group>"; };
+		5573D62E2283D7BD00C0A39D /* NSString+Trees.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Trees.h"; sourceTree = "<group>"; };
+		5573D62F2283D7BD00C0A39D /* MJBinaryTreeInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJBinaryTreeInfo.h; sourceTree = "<group>"; };
+		5573D6302283D7BD00C0A39D /* MJBinaryTrees.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJBinaryTrees.m; sourceTree = "<group>"; };
+		5573D6312283D7BD00C0A39D /* NSString+Trees.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Trees.m"; sourceTree = "<group>"; };
+		5573D6402284814900C0A39D /* BinaryTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BinaryTree.h; sourceTree = "<group>"; };
+		5573D6412284814900C0A39D /* BinaryTree.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BinaryTree.m; sourceTree = "<group>"; };
+		5573D6432284839A00C0A39D /* BSTree+Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BSTree+Test.h"; sourceTree = "<group>"; };
+		5573D6442284839A00C0A39D /* BSTree+Test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "BSTree+Test.m"; sourceTree = "<group>"; };
+		55AC88292286B1CB00F64504 /* AVLTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVLTree.h; sourceTree = "<group>"; };
+		55AC882A2286B1CB00F64504 /* AVLTree.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVLTree.m; sourceTree = "<group>"; };
+		55AC882C2286F1A600F64504 /* AVLTree+Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AVLTree+Test.h"; sourceTree = "<group>"; };
+		55AC882D2286F1A600F64504 /* AVLTree+Test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AVLTree+Test.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +103,96 @@
 		5573D5F622808E3000C0A39D /* Algorithm-OC */ = {
 			isa = PBXGroup;
 			children = (
+				5573D6202283C83600C0A39D /* BinaryTree */,
+				5573D61F2283C7F500C0A39D /* Stack */,
+				5573D61E2283C7ED00C0A39D /* Queue */,
 				5573D5F722808E3000C0A39D /* main.m */,
 			);
 			path = "Algorithm-OC";
+			sourceTree = "<group>";
+		};
+		5573D61E2283C7ED00C0A39D /* Queue */ = {
+			isa = PBXGroup;
+			children = (
+				5573D6192283C79F00C0A39D /* Queue.h */,
+				5573D61B2283C79F00C0A39D /* Queue.m */,
+			);
+			path = Queue;
+			sourceTree = "<group>";
+		};
+		5573D61F2283C7F500C0A39D /* Stack */ = {
+			isa = PBXGroup;
+			children = (
+				5573D6182283C79E00C0A39D /* Stack.h */,
+				5573D61A2283C79F00C0A39D /* Stack.m */,
+			);
+			path = Stack;
+			sourceTree = "<group>";
+		};
+		5573D6202283C83600C0A39D /* BinaryTree */ = {
+			isa = PBXGroup;
+			children = (
+				5573D6212283CA2300C0A39D /* BinarySearchTree */,
+			);
+			path = BinaryTree;
+			sourceTree = "<group>";
+		};
+		5573D6212283CA2300C0A39D /* BinarySearchTree */ = {
+			isa = PBXGroup;
+			children = (
+				5573D6252283D7BD00C0A39D /* MJBinaryTrees */,
+				55AC88252286B0AD00F64504 /* Test */,
+				5573D6402284814900C0A39D /* BinaryTree.h */,
+				5573D6412284814900C0A39D /* BinaryTree.m */,
+				5573D6222283CA3800C0A39D /* BSTree.h */,
+				5573D6232283CA3800C0A39D /* BSTree.m */,
+				55049F992289A161009D9EA4 /* BBSTree.h */,
+				55049F9A2289A161009D9EA4 /* BBSTree.m */,
+				55AC88292286B1CB00F64504 /* AVLTree.h */,
+				55AC882A2286B1CB00F64504 /* AVLTree.m */,
+				55049F9C2289A585009D9EA4 /* RBTree.h */,
+				55049F9D2289A585009D9EA4 /* RBTree.m */,
+			);
+			path = BinarySearchTree;
+			sourceTree = "<group>";
+		};
+		5573D6252283D7BD00C0A39D /* MJBinaryTrees */ = {
+			isa = PBXGroup;
+			children = (
+				5573D6262283D7BD00C0A39D /* MJBinaryTrees.h */,
+				5573D6272283D7BD00C0A39D /* MJPrinter */,
+				5573D62E2283D7BD00C0A39D /* NSString+Trees.h */,
+				5573D62F2283D7BD00C0A39D /* MJBinaryTreeInfo.h */,
+				5573D6302283D7BD00C0A39D /* MJBinaryTrees.m */,
+				5573D6312283D7BD00C0A39D /* NSString+Trees.m */,
+			);
+			path = MJBinaryTrees;
+			sourceTree = "<group>";
+		};
+		5573D6272283D7BD00C0A39D /* MJPrinter */ = {
+			isa = PBXGroup;
+			children = (
+				5573D6282283D7BD00C0A39D /* MJLevelOrderPrinter.h */,
+				5573D6292283D7BD00C0A39D /* MJInorderPrinter.m */,
+				5573D62A2283D7BD00C0A39D /* MJPrinter.h */,
+				5573D62B2283D7BD00C0A39D /* MJLevelOrderPrinter.m */,
+				5573D62C2283D7BD00C0A39D /* MJPrinter.m */,
+				5573D62D2283D7BD00C0A39D /* MJInorderPrinter.h */,
+			);
+			path = MJPrinter;
+			sourceTree = "<group>";
+		};
+		55AC88252286B0AD00F64504 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				5573D6432284839A00C0A39D /* BSTree+Test.h */,
+				5573D6442284839A00C0A39D /* BSTree+Test.m */,
+				55AC882C2286F1A600F64504 /* AVLTree+Test.h */,
+				55AC882D2286F1A600F64504 /* AVLTree+Test.m */,
+				55049F9F2289C03E009D9EA4 /* RBTree+Test.h */,
+				55049FA02289C03E009D9EA4 /* RBTree+Test.m */,
+			);
+			path = Test;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,7 +251,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5573D6452284839A00C0A39D /* BSTree+Test.m in Sources */,
+				5573D6422284814900C0A39D /* BinaryTree.m in Sources */,
+				5573D6242283CA3800C0A39D /* BSTree.m in Sources */,
+				55AC882E2286F1A600F64504 /* AVLTree+Test.m in Sources */,
+				55AC882B2286B1CB00F64504 /* AVLTree.m in Sources */,
+				55049F9E2289A585009D9EA4 /* RBTree.m in Sources */,
+				5573D6352283D7BD00C0A39D /* MJBinaryTrees.m in Sources */,
+				55049FA12289C03E009D9EA4 /* RBTree+Test.m in Sources */,
+				5573D61C2283C79F00C0A39D /* Stack.m in Sources */,
+				55049F9B2289A161009D9EA4 /* BBSTree.m in Sources */,
+				5573D61D2283C79F00C0A39D /* Queue.m in Sources */,
+				5573D6332283D7BD00C0A39D /* MJLevelOrderPrinter.m in Sources */,
 				5573D5F822808E3000C0A39D /* main.m in Sources */,
+				5573D6362283D7BD00C0A39D /* NSString+Trees.m in Sources */,
+				5573D6322283D7BD00C0A39D /* MJInorderPrinter.m in Sources */,
+				5573D6342283D7BD00C0A39D /* MJPrinter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
