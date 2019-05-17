@@ -26,12 +26,7 @@
  */
 @protocol BSTree <NSObject>
 - (void)afterAdd:(BTNode *)node;
-
-/**
- @param node 实际被删除的节点（如果度为1，则需replace取代，否则不需要）
- @param replace 用来取代node节点
- */
-- (void)afterRemove:(BTNode *)node replace:(BTNode *)replace;
+- (void)afterRemove:(BTNode *)node;
 - (__kindof BTNode *)createNodeWithElement:(id)o parent:(BTNode *)parent;
 @end
 

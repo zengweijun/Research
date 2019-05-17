@@ -13,7 +13,7 @@
  
  该类是AVLTree是和RBTree(红黑树)的抽象，主要提供部分公用接口
   */
-@interface BBSTree : BSTree
+@interface BBSTree<ObjectType> : BSTree<ObjectType>
 
 /// 左旋转
 - (void)rotateLeft:(BTNode *)node;

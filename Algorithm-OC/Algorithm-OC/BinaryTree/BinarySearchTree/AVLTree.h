@@ -12,5 +12,5 @@
  AVL树
  平衡因子为0、1和-1，平衡因子为左子树高度-右子树高度
  */
-@interface AVLTree : BBSTree
+@interface AVLTree<ObjectType> : BBSTree<ObjectType>
 @end

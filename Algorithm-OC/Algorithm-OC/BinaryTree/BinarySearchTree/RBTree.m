@@ -103,22 +103,119 @@ addNode: 左  右             左  右       左       左  右       左  右  
     }
 }
 
-- (void)afterRemove:(BTNode *)node replace:(BTNode *)replace {
+- (void)afterRemove:(BTNode *)node {
     // 根据二叉搜索树的性质，实际被删除的节点要么度为1，要么度为0
-    
-    // 删除的节点度为1
-    if (replace) { // 实际删除的节点度为1，要用replace节点取代之
-        // replace取代之后，独立成一个叶子节点（实际是子树的根），需染成黑色
-        [self setBlack:replace];
+    // B树当中，添加和发生实际节点都在最后一层
+
+    // 这里有两种情况
+    // 1.删除的节点本身是红色节点 2.用来取代其的红色节点
+    // 这里统一处理，其实针对1可以不处理
+    if ([self isRed:node]) {
+        [self setBlack:node];
         return;
     }
     
     // 删除的节点度为0
-    if ([self isRed:node]) return; // 红色叶子节点
+    // 红色叶子节点
+    if ([self isRed:node]) return;
     
-    // 黑色叶子节点（发生下溢）
+    BTNode *parent = node->_parent;
+    if (!parent) return; // 删除根节点
     
-    
+    // 黑色叶子节点（发生下溢），需要借节点填充自己位置
+    // 因为黑色叶子节点通常是在最后一层，而且只有其一个元素，如果将其删除，会发生下溢
+    // 由于在二叉搜索树中remove方法其实已经将node删除，因此这里通过node去寻找sibling是找不到的，只能通过parent寻找
+    // 先判断被删除的节点是左节点还是右节点(这里寻找兄弟节点的方式要兼容parent清空掉左或者右节点情况)
+    BOOL isLeft = parent->_left == nil || node.isLeftChild;
+    BTNode *sibling = isLeft ? parent->_right : parent->_left;
+    if (isLeft) {
+        // 被删除的节点属于左子树
+        // 兄弟节点是红色的时候，从B树的角度看，兄弟节点位于父层级
+        if ([self isRed:sibling]) {
+            [self setBlack:sibling];
+            [self setRed:parent];
+            [self rotateLeft:parent];
+            
+            // 更换为新兄弟
+            sibling = parent->_right;
+        }
+        
+        // 兄弟节点必然为黑色(先看其能否借用)
+        // 不能借用（兄弟节点没有子节点）
+        if ([self isBlack:sibling->_left] && [self isBlack:sibling->_right]) {
+            // 先记录以前的颜色
+            BOOL parentIsBlack = [self isBlack:parent];
+            // 将父节点向下合并（父节点染黑，兄弟节点染红）
+            [self setBlack:parent];
+            [self setRed:sibling];
+            if (parentIsBlack) {
+                // 如果父节点是黑色，将其当做子节点从上一层删除（递归走删除逻辑）
+                [self afterRemove:parent];
+            }
+        } else {
+            // 兄弟节点至少有1个红色子节点，向兄弟节点借元素
+            // 兄弟节点的右边是黑色（就是空），兄弟要先旋转
+            if ([self isBlack:sibling->_right]) {
+                [self rotateRight:sibling];
+                sibling = parent->_right;
+            }
+            
+            [self set:sibling color:[self colorOf:parent]];
+            [self setBlack:sibling->_right];
+            [self setBlack:parent];
+            [self rotateLeft:parent];
+        }
+    } else { // symmetrical
+        // 被删除的节点属于右子树
+        // 兄弟节点是红色的时候，从B树的角度看，兄弟节点位于父层级
+        if ([self isRed:sibling]) {
+/** 兄弟节点为红色的情况
+ ┌──(R2)<--(B1)───┐     rotate      ┌───(B2)-->(R1)───┐     down merge   ┌───(B2)──────┐
+ |    |           |      ───>       |            |    |        -->       |             |
+(B3) (B4)        (删除)             (B3)        (B4)  (删除)              (B3)  (B4)<--(R1)
+ 
+ 旋转+染色后只需将红色节点1向下合并即可
+ */
+            [self setBlack:sibling];
+            [self setRed:parent];
+            [self rotateRight:parent];
+            
+            // 更换为新兄弟
+            sibling = parent->_left;
+        }
+        
+        // 兄弟节点必然为黑色(先看其能否借用)
+        // 不能借用（兄弟节点没有子节点）
+        if ([self isBlack:sibling->_left] && [self isBlack:sibling->_right]) {
+            /**
+             父节点黑色(向下递归合并)     父节点为红色，直接线下合并
+             ┌──(B1)───┐              ┌───(B2)-->(R1)───┐
+             |         |              |            |    |
+            (B2)     (删除)           (B3)        (B4)  (删除)
+             */
+            // 先记录以前的颜色
+            BOOL parentIsBlack = [self isBlack:parent];
+            // 将父节点向下合并（父节点染黑，兄弟节点染红）
+            [self setBlack:parent];
+            [self setRed:sibling];
+            if (parentIsBlack) {
+                // 如果父节点是黑色，将其当做子节点从上一层删除（递归走删除逻辑）
+                [self afterRemove:parent];
+            }
+        } else {
+            // 兄弟节点至少有1个红色子节点，向兄弟节点借元素
+            // 兄弟节点的左边是黑色（就是空），兄弟要先旋转
+            if ([self isBlack:sibling->_left]) {
+                [self rotateLeft:sibling];
+                sibling = parent->_left;
+            }
+            
+            [self set:sibling color:[self colorOf:parent]];
+            [self setBlack:sibling->_left];
+            [self setBlack:parent];
+            [self rotateRight:parent];
+        }
+    }
 }
 
 - (BTNode *)createNodeWithElement:(id)o parent:(BTNode *)parent {
