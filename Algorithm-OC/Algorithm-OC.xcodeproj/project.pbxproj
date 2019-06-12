@@ -84,6 +84,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C9DE3BD22B0DAC700FF4144 /* DataStruct */ = {
+			isa = PBXGroup;
+			children = (
+				5573D6202283C83600C0A39D /* BinaryTree */,
+				5573D61F2283C7F500C0A39D /* Stack */,
+				5573D61E2283C7ED00C0A39D /* Queue */,
+				2C9DE3BE22B0DAF100FF4144 /* BinaryHeap */,
+			);
+			path = DataStruct;
+			sourceTree = "<group>";
+		};
+		2C9DE3BE22B0DAF100FF4144 /* BinaryHeap */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BinaryHeap;
+			sourceTree = "<group>";
+		};
 		5573D5EB22808E3000C0A39D = {
 			isa = PBXGroup;
 			children = (
@@ -103,9 +121,7 @@
 		5573D5F622808E3000C0A39D /* Algorithm-OC */ = {
 			isa = PBXGroup;
 			children = (
-				5573D6202283C83600C0A39D /* BinaryTree */,
-				5573D61F2283C7F500C0A39D /* Stack */,
-				5573D61E2283C7ED00C0A39D /* Queue */,
+				2C9DE3BD22B0DAC700FF4144 /* DataStruct */,
 				5573D5F722808E3000C0A39D /* main.m */,
 			);
 			path = "Algorithm-OC";
