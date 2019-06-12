@@ -18,7 +18,7 @@
  4.所有路径上不能出现两个连续的红色Red节点
  5.从任意一个节点到叶子节点所有路径上，包含的黑色Black节点数量相同
  */
-@interface RBTree : BBSTree
+@interface RBTree<ObjectType> : BBSTree<ObjectType>
 
 @end
 

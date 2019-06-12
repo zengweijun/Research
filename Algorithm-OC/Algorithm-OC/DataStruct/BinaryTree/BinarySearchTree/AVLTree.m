@@ -206,7 +206,7 @@
     [self updateHeight:d];
 }
 
-- (void)afterRemove:(BTNode *)node replace:(BTNode *)replace {
+- (void)afterRemove:(BTNode *)node {
     // 删除节点，可能导致从父节开始点往上某一个节点失衡（parent链式上的某一个失衡，而且有且只有一个会失衡）
     // 因为删除节点只有一种情况会导致点失衡：删除的是某一个节点中较短的那一颗子树上节点
     // 所以，失衡点在parent链式上(包含父节点)，有且只有一个

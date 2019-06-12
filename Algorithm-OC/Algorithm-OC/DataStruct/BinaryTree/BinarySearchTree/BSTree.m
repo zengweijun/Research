@@ -123,31 +123,33 @@
     }
     
     // 来到这里的deleteNode一定是度为1或者0的节点
-    BTNode *child = deleteNode->_left? deleteNode->_left : deleteNode->_right;
-    if (child) { // 度为1
+    BTNode *replacement = deleteNode->_left? deleteNode->_left : deleteNode->_right;
+    if (replacement) { // 度为1
         if (!deleteNode->_parent) {//根节点
-            _root = child;
-            child->_parent = nil;
+            _root = replacement;
+            replacement->_parent = nil;
         } else {
             if (deleteNode == deleteNode->_parent->_left) {
-                deleteNode->_parent->_left = child;
+                deleteNode->_parent->_left = replacement;
             } else {
-                deleteNode->_parent->_right = child;
+                deleteNode->_parent->_right = replacement;
             }
-            child->_parent = deleteNode->_parent;
+            replacement->_parent = deleteNode->_parent;
+            
+            // 此处replacement其实继承了node角色特点
+            [self afterRemove:replacement];
         }
-        [self afterRemove:deleteNode replace:child];
     } else { // 度为0
         if (!deleteNode->_parent) { //根节点
-            _root = nil;
+            _root = nil; // 根节点无需处理平衡
         } else {
             if (deleteNode == deleteNode->_parent->_left) {
                 deleteNode->_parent->_left = nil;
             } else {
                 deleteNode->_parent->_right = nil;
             }
+            [self afterRemove:deleteNode];
         }
-        [self afterRemove:deleteNode replace:nil];
     }
 }
 

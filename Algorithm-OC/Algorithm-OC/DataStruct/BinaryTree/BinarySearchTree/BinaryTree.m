@@ -233,18 +233,10 @@
 - (void)preorderTraversal:(void (^)(id, BOOL *))block {
     if (!block) return;
     [self _preorderTraversal:_root block:block];
-}
-- (void)_preorderTraversal:(BTNode *)node block:(void (^)(id, BOOL *))block {
-    if (!node) return;
     
-    // 递归
-    // 递归方式需要考虑怎么终止递归（目前未处理）
-    //    BOOL stop = NO;
-    //    block(node->_element, &stop);
-    //    if (stop) return;
-    //
-    //    [self _preorderTraversal:node->_left block:block];
-    //    [self _preorderTraversal:node->_right block:block];
+//    // 递归方式要终止遍历，这个终止条件要放在递归函数外
+    BOOL stop;
+    [self _recursivePreorderTraversal:_root stop:&stop block:block];
     
     /*
           ┌─────────8───────┐
@@ -255,16 +247,25 @@
            │       │         │
            4       7         13
      */
+}
+- (void)_recursivePreorderTraversal:(BTNode *)node stop:(BOOL *)stop block:(void (^)(id, BOOL *))block {
+    if ((!node) || (*stop)) return;
+    // 递归
+    block(node->_element, stop); if (*stop) return;
+    [self _recursivePreorderTraversal:node->_left stop:stop block:block];
+    [self _recursivePreorderTraversal:node->_right stop:stop block:block];
+}
+- (void)_preorderTraversal:(BTNode *)node block:(void (^)(id, BOOL *))block {
+    if (!node) return;
     
     // 非递归(此处应该想到，递归的本质就是栈的叠加，应优先想到栈接口可以替换递归)
+    BOOL stop = NO;
     Stack *stack = [Stack new];
     BTNode *tmp = node;
     while (tmp || !stack.isEmpty) {
         if (tmp) {
-            BOOL stop = NO;
             block(tmp->_element, &stop);
             if (stop) return;
-            
             [stack push:tmp];
             tmp = tmp->_left;
         } else {
@@ -279,19 +280,23 @@
 - (void)inorderTraversal:(void (^)(id, BOOL *))block {
     if (!block) return;
     [self _inorderTraversal:_root block:block];
+    
+//    // 递归
+//    BOOL stop;
+//    [self _recursiveInorderTraversal:_root stop:&stop block:block];
+}
+- (void)_recursiveInorderTraversal:(BTNode *)node stop:(BOOL *)stop block:(void (^)(id, BOOL *))block {
+    if ((!node) || (*stop)) return;
+    // 递归
+    [self _recursiveInorderTraversal:node->_left stop:stop block:block];
+    block(node->_element, stop); if (*stop) return;
+    [self _recursiveInorderTraversal:node->_right stop:stop block:block];
 }
 - (void)_inorderTraversal:(BTNode *)node block:(void (^)(id, BOOL *))block {
     if (!node) return;
     
-    // 递归
-    // 递归方式需要考虑怎么终止递归（目前未处理）
-    //    [self _inorderTraversal:node->_left block:block];
-    //    BOOL stop = NO;
-    //    block(node->_element, &stop);
-    //    if (stop) return;
-    //    [self _inorderTraversal:node->_right block:block];
-    
     // 非递归
+    BOOL stop = NO;
     Stack *stack = [Stack new];
     BTNode *tmp = node;
     while (tmp || !stack.isEmpty) {
@@ -302,11 +307,7 @@
             // 能来到这里，左指针已经为空，但是栈中还有元素，所以没有访问完毕
             // 说明tmp的左树已经访问完毕，pop栈顶，让tmp指向右子树，循环改过程
             tmp = stack.pop;
-            
-            BOOL stop = NO;
-            block(tmp->_element, &stop);
-            if (stop) return;
-            
+            block(tmp->_element, &stop); if (stop) return;
             tmp = tmp->_right;
         }
     }
@@ -315,20 +316,22 @@
 - (void)postorderTraversal:(void (^)(id, BOOL *))block {
     if (!block) return;
     [self _postorderTraversal:_root block:block];
+   
+//    // 递归
+//    BOOL stop;
+//    [self _recursivePostorderTraversal:_root stop:&stop block:block];
+}
+- (void)_recursivePostorderTraversal:(BTNode *)node stop:(BOOL *)stop block:(void (^)(id, BOOL *))block {
+    if ((!node) || (*stop)) return;
+    // 递归
+    [self _recursivePostorderTraversal:node->_left stop:stop block:block];
+    [self _recursivePostorderTraversal:node->_right stop:stop block:block];
+    block(node->_element, stop);
 }
 - (void)_postorderTraversal:(BTNode *)node block:(void (^)(id, BOOL *))block {
     if (!node) return;
     
-    // 递归
-    // 递归方式需要考虑怎么终止递归（目前未处理）
-    //    [self _postorderTraversal:node->_left block:block];
-    //    [self _postorderTraversal:node->_right block:block];
-    //    BOOL stop = NO;
-    //    block(node->_element, &stop);
-    //    if (stop) return;
-    
-    // 非递归
-    
+    /// 非递归
 #if 1
     // 思路1：给节点添加标记,标记作用
     // 若节点为叶子节点，则标记自增(出栈->重新入栈)完成后(由于没有子节点)自动出栈
@@ -338,6 +341,7 @@
     // 1.2 -->判断(其左子节点不存在)-->出栈，flag++(此时先不访问)，接着入栈-->右子节点入栈-->...，重复1.1过程
     // 1.3 当左右子节点都访问完毕后，根节点的flag == 2，此时可以出栈根节点
     
+    BOOL stop = NO;
     Stack *stack = [Stack new];
     BTNode *tmp = node;
     int notReadFlag = 1; // flag为1的是，先不读取节点值
@@ -358,9 +362,7 @@
                 // 将节点重新入栈，访问其右节点入栈，以便下一轮循环入栈
                 // 此时若其右节点为空，由于其flag已经++过，所以下次循环回来会直接访问出栈
             } else { // flag == 2,此时应该访问该节点
-                BOOL stop = NO;
-                block(tmp->_element, &stop);
-                if (stop) return;
+                block(tmp->_element, &stop); if (stop) return;
                 
                 // 此处节点已经被访问过，说明其已经没有了左右子树，不应该再进入寻找左子树的while循环
                 // 故此处设置为nil
@@ -379,6 +381,7 @@
      2.当存在left或者right，如果left和right都已经被访问过，可以直接访问该节点
      3.排除1、2，则现将right入栈、再讲left入栈（保证访问的时候是先left后right）
      */
+    BOOL stop = NO;
     Stack *stack = [Stack new];
     BTNode *tmp = node;
     BTNode *read = nil;
@@ -398,9 +401,7 @@
             tmp = stack.pop;
             read = tmp;
             
-            BOOL stop = NO;
-            block(tmp->_element, &stop);
-            if (stop) return;
+            block(tmp->_element, &stop); if (stop) return;
         } else {
             if (tmp->_right) [stack push:tmp->_right];
             if (tmp->_left) [stack push:tmp->_left];
@@ -430,10 +431,14 @@
 }
 
 - (NSString *)debugPrintDescription {
-    NSString *bstStr = [MJBinaryTrees printString:self];
     NSString *str = [NSString stringWithFormat:@"%@<%p>\n", self.class, self];
     str = [str stringByAppendingString:@"---------------------------------\n"];
-    str = [str stringByAppendingString:bstStr?bstStr:@"BinaryTree is null"];
+    if (_root) {
+        NSString *bstStr = [MJBinaryTrees printString:self];
+        str = [str stringByAppendingString:bstStr?bstStr:@"BinaryTree is null"];
+    } else {
+        str = [str stringByAppendingString:@"null"];
+    }
     str = [str stringByAppendingString:@"\n---------------------------------"];
     return str;
 }
