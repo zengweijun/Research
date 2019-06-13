@@ -46,8 +46,16 @@ private:
     int compare(E e1, E e2);
     void emptyCheck();
     
+    int fitCapacity(int capacity);
+    void heapify();
+    
+    int (*m_comparator)(E e1, E e2);
+    
 public:
-    BinaryHeap(int capacity = DEFAULT_CAPACITY);
+    BinaryHeap(int capacity = DEFAULT_CAPACITY, int (*comparator)(E e1, E e2) = nullptr);
+    
+    /// 批量建堆
+    BinaryHeap(E elements[], int elementCount = 0, int (*comparator)(E e1, E e2) = nullptr);
     ~BinaryHeap();
     
     /// 元素个数
@@ -63,7 +71,7 @@ public:
     void add(E element);
     
     /// 获得堆顶元素
-    E get();
+    E peek();
     
     /// 删除堆顶元素
     E remove();
@@ -77,10 +85,28 @@ public:
 };
 
 template <class E>
-BinaryHeap<E>::BinaryHeap(int capacity) {
+BinaryHeap<E>::BinaryHeap(int capacity, int (*comparator)(E e1, E e2)) {
     m_size = 0;
-    m_capacity = (capacity>DEFAULT_CAPACITY) ? capacity : DEFAULT_CAPACITY;
+    m_capacity = fitCapacity(capacity);
     m_elements = new E[m_capacity];
+    m_comparator = comparator;
+}
+
+template <class E>
+BinaryHeap<E>::BinaryHeap(E elements[], int elementCount, int (*comparator)(E e1, E e2)) {
+    
+    m_size = 0;
+    m_capacity = fitCapacity(elementCount);
+    m_elements = new E[m_capacity];
+    m_comparator = comparator;
+    
+    if (elementCount != 0 && elements != nullptr) {
+        m_size = elementCount;
+        for (int i = 0; i < elementCount; i++) {
+            this->m_elements[i] = elements[i];
+        }
+        heapify();
+    }
 }
 
 template <class E>
@@ -119,8 +145,9 @@ void BinaryHeap<E>::add(E element) {
 }
 
 template <class E>
-E BinaryHeap<E>::get() {
-    
+E BinaryHeap<E>::peek() {
+    if (m_size == 0) return NULL;
+    return m_elements[0];
 }
 
 template <class E>
@@ -131,7 +158,6 @@ E BinaryHeap<E>::remove() {
     int lastIndex = --m_size;
     E root = m_elements[0];
     m_elements[0] = m_elements[lastIndex];
-    delete m_elements[lastIndex];
     
     siftDown(0);
     return root;
@@ -139,7 +165,18 @@ E BinaryHeap<E>::remove() {
 
 template <class E>
 E BinaryHeap<E>::replace(E element) {
+    elementNotNullCheck(element);
     
+    E root = NULL;
+    if (m_size == 0) {
+        m_elements[0] = element;
+        m_size ++;
+    } else {
+        root = m_elements[0];
+        m_elements[0] = element;
+        siftDown(0);
+    }
+    return root;
 }
 
 template <class E>
@@ -153,7 +190,7 @@ void BinaryHeap<E>::print() {
 /// ------------- Helper
 template <class E>
 void BinaryHeap<E>::elementNotNullCheck(E element) {
-    if (element != 0) return; // Do nothing
+    if (element != NULL) return; // Do nothing
     throw "element must not be null";
 }
 
@@ -163,12 +200,12 @@ void BinaryHeap<E>::ensureCapacity(int needCapacity) {
     if (oldCapacity >= needCapacity) return; // do nothing
     
     // 新容量为旧容量的1.5倍
-    int newCapacity = oldCapacity + (oldCapacity >> 1);
-    E *newEelements = new E[newCapacity];
+    m_capacity = oldCapacity + (oldCapacity >> 1);
+    E *newEelements = new E[m_capacity];
     for (int i = 0; i < m_size; i++) newEelements[i] = m_elements[i];
     m_elements = newEelements;
     
-    cout << "发生扩容操作" << oldCapacity << "-->" << newCapacity << endl;
+    cout << "发生扩容操作" << oldCapacity << "-->" << m_capacity << endl;
 }
 
 template <class E>
@@ -229,7 +266,7 @@ void BinaryHeap<E>::siftDown(int index) {
 
 template <class E>
 int BinaryHeap<E>::compare(E e1, E e2) {
-    return e1 - e2;
+    return m_comparator ? m_comparator(e1, e2) : e1 - e2;
 }
 
 template <class E>
@@ -237,4 +274,27 @@ void BinaryHeap<E>::emptyCheck() {
     if (m_size == 0) throw "Heap is empty";
 }
 
+template <class E>
+void BinaryHeap<E>::heapify() {
+    // 批量建堆需要调整为二叉堆时，有两种方式可以选择
+    // 1.自上而下的上滤（最坏情况除了根节点，都进行上滤操作）
+    // 2.自下而上的下滤（最坏情况除了叶子节点，都进行下滤操作）
+    // 由于叶子节点通常 > 根节点，所以最好选择自下而上的下滤
+    // 完全二叉树第一个非叶子节点索引为n/2-1 --> (n>>1) - 1
+    
+        // 自上而下的上滤
+//        for (int i = 1; i < size; i++) {
+//            siftUp(i);
+//        }
+    
+    // 自下而上的下滤
+    for (int i = (m_size>>1) - 1; i >= 0 ; i--) {
+        siftDown(i);
+    }
+}
+
+template <class E>
+int BinaryHeap<E>::fitCapacity(int capacity) {
+    return capacity>0 ? capacity : DEFAULT_CAPACITY;
+}
 
