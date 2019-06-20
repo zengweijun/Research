@@ -8,8 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+///  面试题3：数组中重复的数字
+//============================================================================================
 /*
- 面试题3：数组中重复的数字
+1.找出数组中重复的数字
  
  在一个长度为n的数组里的所有数字都在0~n-1的范围内。数组中某些数字是重复的，但不知道有几个数字重复了，也不知道每个数字重复了
  几次。请找出数组中任意一个重复的数字。
@@ -114,28 +116,40 @@ BOOL duplicate_2(int arr[], int length, int *duplication) {
     return NO;
 }
 
+//============================================================================================
+/**
+ 2.不修改数组找出重复的数字。
+ 在一个长度为n+1的数组里的所有数字都在1~n的范围内，所以数组中至少有一个数字是重复的。请找出数组中任意一个重复的数字，但不能修改输入的数组。
+ 例如，如果输入长度为8的数组{2,3,5,4,3,2,6,7}，那么 对应的输出是重复的数字2或者3。
+ 
+ */
+
+
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
+        // --------------------- 题目1-----------------------------
         int arr[] = {2,3,1,0,2,5,3};
         int length = sizeof(arr)/sizeof(int);
         for (int i = 0; i < length; ++i) { printf("%d\t", arr[i]); }
         printf("\n");
+        
         int tmp;
-        if (duplicate_1(arr, length, &tmp)) {
-            printf("重复数字：%d\n", tmp);
-        } else {
-            printf("未找到重复数字\n");
-        }
+        if (duplicate_1(arr, length, &tmp)) printf("重复数字：%d\n", tmp);
+        else printf("未找到重复数字\n");
         
         for (int i = 0; i < length; ++i) { printf("%d\t", arr[i]); }
         printf("\n");
-        if (duplicate_2(arr, length, &tmp)) {
-            printf("重复数字：%d\n", tmp);
-        } else {
-            printf("未找到重复数字\n");
-        }
+        
+        if (duplicate_2(arr, length, &tmp)) printf("重复数字：%d\n", tmp);
+        else printf("未找到重复数字\n");
+        
         for (int i = 0; i < length; ++i) { printf("%d\t", arr[i]); }
         printf("\n");
+        
+        // --------------------- 题目2-----------------------------
+        
+        
     }
     return 0;
 }
