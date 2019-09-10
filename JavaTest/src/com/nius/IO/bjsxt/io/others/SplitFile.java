@@ -15,19 +15,19 @@ import java.util.Vector;
 
 import com.bjsxt.io.util.FileUtil;
 public class SplitFile {
-	//ÎÄ¼þµÄÂ·¾¶
+	//ï¿½Ä¼ï¿½ï¿½ï¿½Â·ï¿½ï¿½
 	private String filePath;
-	//ÎÄ¼þÃû
+	//ï¿½Ä¼ï¿½ï¿½ï¿½
 	private String fileName;
-	//ÎÄ¼þ´óÐ¡
+	//ï¿½Ä¼ï¿½ï¿½ï¿½Ð¡
 	private long length;
-	//¿éÊý
+	//ï¿½ï¿½ï¿½ï¿½
 	private int size;
-	//Ã¿¿éµÄ´óÐ¡
+	//Ã¿ï¿½ï¿½Ä´ï¿½Ð¡
 	private long blockSize;
-	//·Ö¸îºóµÄ´æ·ÅÄ¿Â¼
+	//ï¿½Ö¸ï¿½ï¿½Ä´ï¿½ï¿½Ä¿Â¼
 	private String destBlockPath;
-	//Ã¿¿éµÄÃû³Æ
+	//Ã¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	private List<String> blockPath;
 	
 	public SplitFile(){
@@ -45,29 +45,29 @@ public class SplitFile {
 	}
 	
 	/**
-	 * ³õÊ¼»¯²Ù×÷ ¼ÆËã ¿éÊý¡¢È·¶¨ÎÄ¼þÃû
+	 * ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È·ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½
 	 */
 	public void init(){
 		File src =null;
-		//½¡×³ÐÔ
+		//ï¿½ï¿½×³ï¿½ï¿½
 		if(null==filePath ||!(((src=new File(filePath)).exists()))){
 			return;
 		}
 		if(src.isDirectory()){
 			return ;
 		}
-		//ÎÄ¼þÃû
+		//ï¿½Ä¼ï¿½ï¿½ï¿½
 		this.fileName =src.getName();
 		
-		//¼ÆËã¿éÊý Êµ¼Ê´óÐ¡ ÓëÃ¿¿é´óÐ¡
+		//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Êµï¿½Ê´ï¿½Ð¡ ï¿½ï¿½Ã¿ï¿½ï¿½ï¿½Ð¡
 		this.length = src.length();
-		//ÐÞÕý Ã¿¿é´óÐ¡
+		//ï¿½ï¿½ï¿½ï¿½ Ã¿ï¿½ï¿½ï¿½Ð¡
 		if(this.blockSize>length){
 			this.blockSize =length;
 		}
-		//È·¶¨¿éÊý		
+		//È·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½		
 		size= (int)(Math.ceil(length*1.0/this.blockSize));
-		//È·¶¨ÎÄ¼þµÄÂ·¾¶
+		//È·ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½Â·ï¿½ï¿½
 		initPathName();
 	}
 	
@@ -78,55 +78,55 @@ public class SplitFile {
 	}
 	
 	/**
-	 * ÎÄ¼þµÄ·Ö¸î
-	 * 0)¡¢µÚ¼¸¿é
-	 * 1¡¢ÆðÊ¼Î»ÖÃ
-	 * 2¡¢Êµ¼Ê´óÐ¡
-	 * @param destPath ·Ö¸îÎÄ¼þ´æ·ÅÄ¿Â¼
+	 * ï¿½Ä¼ï¿½ï¿½Ä·Ö¸ï¿½
+	 * 0)ï¿½ï¿½ï¿½Ú¼ï¿½ï¿½ï¿½
+	 * 1ï¿½ï¿½ï¿½ï¿½Ê¼Î»ï¿½ï¿½
+	 * 2ï¿½ï¿½Êµï¿½Ê´ï¿½Ð¡
+	 * @param destPath ï¿½Ö¸ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½Ä¿Â¼
 	 */
 	public void split(){	
-		long beginPos =0;  //ÆðÊ¼µã
-		long actualBlockSize =blockSize; //Êµ¼Ê´óÐ¡		
-		//¼ÆËãËùÓÐ¿éµÄ´óÐ¡¡¢Î»ÖÃ¡¢Ë÷Òý
+		long beginPos =0;  //ï¿½ï¿½Ê¼ï¿½ï¿½
+		long actualBlockSize =blockSize; //Êµï¿½Ê´ï¿½Ð¡		
+		//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¿ï¿½Ä´ï¿½Ð¡ï¿½ï¿½Î»ï¿½Ã¡ï¿½ï¿½ï¿½ï¿½ï¿½
 		for(int i=0;i<size;i++){
-			if(i==size-1){ //×îºóÒ»¿é
+			if(i==size-1){ //ï¿½ï¿½ï¿½Ò»ï¿½ï¿½
 				actualBlockSize =this.length-beginPos;
 			}			
 			spiltDetail(i,beginPos,actualBlockSize);
-			beginPos+=actualBlockSize; //±¾´ÎµÄÖÕµã£¬ÏÂÒ»´ÎµÄÆðµã
+			beginPos+=actualBlockSize; //ï¿½ï¿½ï¿½Îµï¿½ï¿½Õµã£¬ï¿½ï¿½Ò»ï¿½Îµï¿½ï¿½ï¿½ï¿½
 		}
 		
 	}
 	/**
-	 * ÎÄ¼þµÄ·Ö¸î ÊäÈë Êä³ö
-	 * ÎÄ¼þ¿½±´
-	 * @param idx µÚ¼¸¿é
-	 * @param beginPos ÆðÊ¼µã
-	 * @param actualBlockSize Êµ¼Ê´óÐ¡
+	 * ï¿½Ä¼ï¿½ï¿½Ä·Ö¸ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
+	 * ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½
+	 * @param idx ï¿½Ú¼ï¿½ï¿½ï¿½
+	 * @param beginPos ï¿½ï¿½Ê¼ï¿½ï¿½
+	 * @param actualBlockSize Êµï¿½Ê´ï¿½Ð¡
 	 */
 	private void spiltDetail(int idx,long beginPos,long actualBlockSize){
-		//1¡¢´´½¨Ô´
-		File src = new File(this.filePath);  //Ô´ÎÄ¼þ
-		File dest = new File(this.blockPath.get(idx)); //Ä¿±êÎÄ¼þ
-		//2¡¢Ñ¡ÔñÁ÷
-		RandomAccessFile raf = null;  //ÊäÈëÁ÷
-		BufferedOutputStream bos=null; //Êä³öÁ÷
+		//1ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô´
+		File src = new File(this.filePath);  //Ô´ï¿½Ä¼ï¿½
+		File dest = new File(this.blockPath.get(idx)); //Ä¿ï¿½ï¿½ï¿½Ä¼ï¿½
+		//2ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½
+		RandomAccessFile raf = null;  //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		BufferedOutputStream bos=null; //ï¿½ï¿½ï¿½ï¿½ï¿½
 		try {
 			raf=new RandomAccessFile(src,"r");
 			bos =new BufferedOutputStream(new FileOutputStream(dest));
 			
-			//¶ÁÈ¡ÎÄ¼þ
+			//ï¿½ï¿½È¡ï¿½Ä¼ï¿½
 			raf.seek(beginPos);
-			//»º³åÇø
+			//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 			byte[] flush = new byte[1024];
-			//½ÓÊÕ³¤¶È
+			//ï¿½ï¿½ï¿½Õ³ï¿½ï¿½ï¿½
 			int len =0;
 			while(-1!=(len=raf.read(flush))){				
-				if(actualBlockSize-len>=0){ //²é¿´ÊÇ·ñ×ã¹»
-					//Ð´³ö
+				if(actualBlockSize-len>=0){ //ï¿½é¿´ï¿½Ç·ï¿½ï¿½ã¹»
+					//Ð´ï¿½ï¿½
 					bos.write(flush, 0, len);
-					actualBlockSize-=len; //Ê£ÓàÁ¿
-				}else{ //Ð´³ö×îºóÒ»´ÎµÄÊ£ÓàÁ¿
+					actualBlockSize-=len; //Ê£ï¿½ï¿½ï¿½ï¿½
+				}else{ //Ð´ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½Îµï¿½Ê£ï¿½ï¿½ï¿½ï¿½
 					bos.write(flush, 0, (int)actualBlockSize);
 					break;
 				}
@@ -143,26 +143,26 @@ public class SplitFile {
 		
 	}
 	/**
-	 * ÎÄ¼þµÄºÏ²¢
+	 * ï¿½Ä¼ï¿½ï¿½ÄºÏ²ï¿½
 	 */
 	public void merge(String destPath){
-		//´´½¨Ô´
+		//ï¿½ï¿½ï¿½ï¿½Ô´
 		File dest =new File(destPath);
-		//Ñ¡ÔñÁ÷
-		BufferedOutputStream bos=null; //Êä³öÁ÷
-		SequenceInputStream sis =null ;//ÊäÈëÁ÷
-		//´´½¨Ò»¸öÈÝÆ÷
+		//Ñ¡ï¿½ï¿½ï¿½ï¿½
+		BufferedOutputStream bos=null; //ï¿½ï¿½ï¿½ï¿½ï¿½
+		SequenceInputStream sis =null ;//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		//ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		Vector<InputStream> vi = new Vector<InputStream>();		
 		try {
 			for (int i = 0; i < this.blockPath.size(); i++) {
 				vi.add(new BufferedInputStream(new FileInputStream(new File(this.blockPath.get(i)))));
 			}	
-			bos =new BufferedOutputStream(new FileOutputStream(dest,true)); //×·¼Ó
+			bos =new BufferedOutputStream(new FileOutputStream(dest,true)); //×·ï¿½ï¿½
 			sis=new SequenceInputStream(vi.elements());			
 				
-			//»º³åÇø
+			//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 			byte[] flush = new byte[1024];
-			//½ÓÊÕ³¤¶È
+			//ï¿½ï¿½ï¿½Õ³ï¿½ï¿½ï¿½
 			int len =0;
 			while(-1!=(len=sis.read(flush))){						
 				bos.write(flush, 0, len);
@@ -176,22 +176,22 @@ public class SplitFile {
 		
 	}
 	/**
-	 * ÎÄ¼þµÄºÏ²¢
+	 * ï¿½Ä¼ï¿½ï¿½ÄºÏ²ï¿½
 	 */
 	public void merge1(String destPath){
-		//´´½¨Ô´
+		//ï¿½ï¿½ï¿½ï¿½Ô´
 		File dest =new File(destPath);
-		//Ñ¡ÔñÁ÷
-		BufferedOutputStream bos=null; //Êä³öÁ÷
+		//Ñ¡ï¿½ï¿½ï¿½ï¿½
+		BufferedOutputStream bos=null; //ï¿½ï¿½ï¿½ï¿½ï¿½
 		try {
-			bos =new BufferedOutputStream(new FileOutputStream(dest,true)); //×·¼Ó
+			bos =new BufferedOutputStream(new FileOutputStream(dest,true)); //×·ï¿½ï¿½
 			BufferedInputStream bis = null;
 			for (int i = 0; i < this.blockPath.size(); i++) {
 				bis = new BufferedInputStream(new FileInputStream(new File(this.blockPath.get(i))));
 				
-				//»º³åÇø
+				//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 				byte[] flush = new byte[1024];
-				//½ÓÊÕ³¤¶È
+				//ï¿½ï¿½ï¿½Õ³ï¿½ï¿½ï¿½
 				int len =0;
 				while(-1!=(len=bis.read(flush))){						
 					bos.write(flush, 0, len);
@@ -210,7 +210,7 @@ public class SplitFile {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		SplitFile split = new SplitFile("E:/xp/20130502/test/Ñ§Ô±ÉèÖÃ(20130502).xls","E:/xp/20130502",51);
+		SplitFile split = new SplitFile("E:/xp/20130502/test/Ñ§Ô±ï¿½ï¿½ï¿½ï¿½(20130502).xls","E:/xp/20130502",51);
 		
 		//System.out.println(split.size);
 		
