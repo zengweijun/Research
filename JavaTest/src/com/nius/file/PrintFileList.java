@@ -11,13 +11,7 @@ import java.util.Comparator;
  *
  */
 public class PrintFileList {
-	public static void main(String[] args) {
-		printDir("/Users/ybf/Desktop/文档");
-//		printDir("/Users/ybf/Documents/YBF/ybf-compoents");
-//		printDir("/Users/ybf/Desktop/test11");
-		
-	}
-	
+
 	public static void printDir(String filePath) {
 		System.out.println("------>begin\n");
 		String prefix = "";
@@ -45,30 +39,32 @@ public class PrintFileList {
 					return 0;
 				}
 				if (inF1.isFile() && !inF2.isFile()) {
-					return -1;
+					return 1;
 				}
 				if (!inF1.isFile() && inF2.isFile()) {
-					return 1;
+					return -1;
 				}
 				return inF1.list().length - inF2.list().length;
 			}
 		});
 		
-		prefix = prefix + "    ";
+		prefix = prefix + "│    ";
 		for (int i = 0; i < fileList.length; i++) {
 			String itemName = fileList[i];
+			String tag = "├──";
+			if (i == fileList.length - 1) {
+				tag = "└──";
+			}
+		
+			String printName = prefix + tag + itemName;
+			
 			String itemPath = filePath + "/" + itemName;
 			File f1 = new File(itemPath);
-			if (f1.isHidden()) { continue; }
 			
-			String tag = " "+prefix+"├──"; // │
-			if (i == fileList.length - 1) {
-				tag = " "+prefix+"└──";
-			} 
-			String printName = tag + itemName;
-//			if (itemName.startsWith("YBF")) {
+			if (f1.isHidden()) { continue; }
+			if (itemName.startsWith("YBF")) {
 				System.out.println(printName);
-//			}
+			}
 			if (f1.isFile()) { continue; }
 			printDir(itemPath, prefix);
 		}
