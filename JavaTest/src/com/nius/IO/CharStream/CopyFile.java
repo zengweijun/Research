@@ -41,7 +41,7 @@ public class CopyFile {
 			fileReader = new FileReader(src);
 			fileWriter = new FileWriter(dest, false);
 			
-			char[] chars = new char[1024];
+			char[] chars = new char[100];
 			while (-1 != (fileReader.read(chars))) {
 				fileWriter.write(chars);
 			}
@@ -71,11 +71,19 @@ public class CopyFile {
 		try {
 			fileReader = new BufferedReader(new FileReader(src));
 			fileWriter = new BufferedWriter(new FileWriter(dest, true));
-			
-			char[] chars = new char[1024];
+
+			char[] chars = new char[100];
 			while (-1 != (fileReader.read(chars))) {
 				fileWriter.write(chars);
 			}
+
+//			// BufferedReader提供你方法，可以一行一行的读取
+//			String line = null;
+//			while (null != (line = fileReader.readLine())) {
+//				fileWriter.write(line);
+//				fileWriter.newLine(); // fileWriter.write("\r\n");
+//			}
+
 			fileWriter.flush();
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
