@@ -1,7 +1,10 @@
 package com.nius.IO.文件分割合并;
 
+import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.RandomAccessFile;
@@ -10,7 +13,7 @@ import javax.imageio.IIOException;
 
 import com.nius.IO.bjsxt.io.others.SplitFile;
 
-public class FileSplit {
+public class FileSplitMerge {
 	public static void main(String[] args) {
 		
 		try {
@@ -18,12 +21,12 @@ public class FileSplit {
 			// 分割文本（不包含中文）
 			split("./src/com/nius/IO/test/test-----.txt", 
 					"./src/com/nius/IO/test/test-----", 
-					50);
+					120);
 			
 			// 分割图片
 			split("./src/com/nius/IO/test/33333333.jpg", 
 					"./src/com/nius/IO/test/33333333", 
-					1024 * 8);
+					1024 * 12);
 			System.out.println("----------------------------");
 		} catch (NullPointerException e) {
 			e.printStackTrace();
@@ -33,6 +36,29 @@ public class FileSplit {
 		
 		
 		
+		
+		try {
+			String[] srcPaths = 
+				{"./src/com/nius/IO/test/test-----/test-----_part0.txt", 
+				 "./src/com/nius/IO/test/test-----/test-----_part1.txt",
+				 "./src/com/nius/IO/test/test-----/test-----_part2.txt",
+				 "./src/com/nius/IO/test/test-----/test-----_part3.txt",
+				 "./src/com/nius/IO/test/test-----/test-----_part4.txt",
+						};
+			merge(srcPaths, "./src/com/nius/IO/test/test-----/kkkkkk.txt");
+			
+
+			String[] srcPaths1 = 
+				{"./src/com/nius/IO/test/33333333/33333333_part0.jpg",
+					"./src/com/nius/IO/test/33333333/33333333_part1.jpg",
+					"./src/com/nius/IO/test/33333333/33333333_part2.jpg",
+					"./src/com/nius/IO/test/33333333/33333333_part3.jpg",
+					"./src/com/nius/IO/test/33333333/33333333_part4.jpg"
+						};
+			merge(srcPaths1, "./src/com/nius/IO/test/33333333/kkkkkk.jpg");
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 	
 	/**
@@ -107,7 +133,40 @@ public class FileSplit {
 			if (i == tileCount - 1) {
 				blockSize = totalSize - pos;
 			}
+			
+			os.close();
+			raf.close();
 		}
+	}
+	
+	public static void merge(String[] srcPaths, String destPath) throws IOException {
+		FileOutputStream fos = new FileOutputStream(new File(destPath), true);
+		BufferedOutputStream bos = new BufferedOutputStream(fos);
+		
+		for (int i = 0; i < srcPaths.length; i++) {
+			String filepath = srcPaths[i];
+			File tmp = new File(filepath);
+			if (!tmp.isFile()) continue;
+			System.out.println(filepath);
+			
+			FileInputStream fis = new FileInputStream(new File(filepath));
+			BufferedInputStream bis = new BufferedInputStream(fis);
+			
+//			byte[] bytes = new byte[100];
+//			while (-1 != bis.read(bytes)) {
+//				bos.write(bytes);
+//			}
+			int len = 0;
+			byte[] bytes = new byte[100];
+			while (-1 != (len = bis.read(bytes))) {
+//				bos.write(bytes);
+				bos.write(bytes, 0, len);
+			}
+			fis.close();
+		}
+		
+		bos.flush();
+		bos.close();
 	}
 }
 
