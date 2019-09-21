@@ -16,6 +16,14 @@ import com.nius.IO.bjsxt.io.others.SplitFile;
 public class FileSplitMerge {
 	public static void main(String[] args) {
 		
+		// 分割
+		testSplit();
+		
+		// 合并
+		testMerge();
+	}
+	
+	public static void testSplit() {
 		try {
 			System.out.println("----------------------------");
 			// 分割文本（不包含中文）
@@ -33,10 +41,9 @@ public class FileSplitMerge {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		
-		
-		
-		
+	}
+	
+	public static void testMerge() {
 		try {
 			String[] srcPaths = 
 				{"./src/com/nius/IO/test/test-----/test-----_part0.txt", 
@@ -99,7 +106,6 @@ public class FileSplitMerge {
 		}
 
 		int tileCount = (int)Math.ceil((((double)totalSize) / blockSize));
-		
 		long pos = 0;
 		for (int i = 0; i < tileCount; i++) {
 			// 访问和插入文件任意位置，使用RandomAccessFile
@@ -113,8 +119,9 @@ public class FileSplitMerge {
 			File destD = new File(destDir);
 			if (!destD.exists()) destD.mkdirs();
 			File dest = new File(destD, filenamePrefix + "_part" + i + "." + filenameSuffix); 
+			if (dest.exists()) dest.delete();
 			BufferedOutputStream os = new BufferedOutputStream(new FileOutputStream(dest, true));
-
+			
 			long shouldReadSize = blockSize;
 			int len = 0;
 			byte[] bytes = new byte[100];
@@ -140,7 +147,9 @@ public class FileSplitMerge {
 	}
 	
 	public static void merge(String[] srcPaths, String destPath) throws IOException {
-		FileOutputStream fos = new FileOutputStream(new File(destPath), true);
+		File dest = new File(destPath);
+		if (dest.exists()) dest.delete();
+		FileOutputStream fos = new FileOutputStream(dest, true);
 		BufferedOutputStream bos = new BufferedOutputStream(fos);
 		
 		for (int i = 0; i < srcPaths.length; i++) {

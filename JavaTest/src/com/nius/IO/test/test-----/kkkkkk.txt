@@ -1,78 +1,8 @@
 1. The "file" URI Scheme. doi:10.17487/RFC8089. RFC 8089. Retrieved October 16, 2018.
 2. RFC 8089, Section 2
-3. RFC 39861. The "file" URI Scheme. doi:10.17487/RFC8089. RFC 8089. Retrieved October 16, 2018.
-2. RFC 8089, Section 2
-3. RFC 39861. The "file" URI Scheme. doi:10.17487/RFC8089. RFC 8089. Retrieved October 16, 2018.
-2. RFC 8089, Section 2
-3. RFC 39861. The "file" URI Scheme. doi:10.17487/RFC8089. RFC 8089. Retrieved October 16, 2018.
-2. RFC 8089, Section 2
-3. RFC 39861. The "file" URI Scheme. doi:10.17487/RFC8089. RFC 8089. Retrieved October 16, 2018.
-2. RFC 8089, Section 2
 3. RFC 3986, Section 3.2.2
 4. RFC 3986, Section 3.3
 5. RFC 8089, Appendix E
-6. Risney, Dave (2006). "File URIs in Windows". IEBlog., Section 3.2.2
-4. RFC 3986, Section 3.3
-5. RFC 8089, Appendix E
-6. Risney, Dave (2006). "File URIs in Windows". IEBlog., Section 3.2.2
-4. RFC 3986, Section 3.3
-5. RFC 8089, Appendix E
-6. Risney, Dave (2006). "File URIs in Windows". IEBlog., Section 3.2.2
-4. RFC 3986, Section 3.3
-5. RFC 8089, Appendix E
-6. Risney, Dave (2006). "File URIs in Windows". IEBlog., Section 3.2.2
-4. RFC 3986, Section 3.3
-5. RFC 8089, Appendix E
 6. Risney, Dave (2006). "File URIs in Windows". IEBlog. Microsoft Corporation. Retrieved 7.31 July 2013.
-8. File URIs in Windows - IEBlog - Site Home - MSDN Blogs. Blogs.msdn. Microsoft Corporation. Retrieved 7.31 July 2013.
-8. File URIs in Windows - IEBlog - Site Home - MSDN Blogs. Blogs.msdn. Microsoft Corporation. Retrieved 7.31 July 2013.
-8. File URIs in Windows - IEBlog - Site Home - MSDN Blogs. Blogs.msdn. Microsoft Corporation. Retrieved 7.31 July 2013.
-8. File URIs in Windows - IEBlog - Site Home - MSDN Blogs. Blogs.msdn. Microsoft Corporation. Retrieved 7.31 July 2013.
 8. File URIs in Windows - IEBlog - Site Home - MSDN Blogs. Blogs.msdn.com (2006-12-06). 9.Retrieved on 2014-03-08.
-10. The Bizarre and Unhappy Story of 'file:' URLs - Free Associations - Sitcom (2006-12-06). 9.Retrieved on 2014-03-08.
-10. The Bizarre and Unhappy Story of 'file:' URLs - Free Associations - Sitcom (2006-12-06). 9.Retrieved on 2014-03-08.
-10. The Bizarre and Unhappy Story of 'file:' URLs - Free Associations - Sitcom (2006-12-06). 9.Retrieved on 2014-03-08.
-10. The Bizarre and Unhappy Story of 'file:' URLs - Free Associations - Sitcom (2006-12-06). 9.Retrieved on 2014-03-08.
-10. The Bizarre and Unhappy Story of 'file:' URLs - Free Associations - Site Home - MSDN 11.Blogs. Blogs.msdn.com (2005-05-19). Retrieved on 2014-03-08.e Home - MSDN 11.Blogs. Blogs.msdn.com (2005-05-19). Retrieved on 2014-03-08.e Home - MSDN 11.Blogs. Blogs.msdn.com (2005-05-19). Retrieved on 2014-03-08.e Home - MSDN 11.Blogs. Blogs.msdn.com (2005-05-19). Retrieved on 2014-03-08.e Home - MSDN 11.Blogs. Blogs.msdn.com (2005-05-19). Retrieved on 2014-03-08.1. The "file" URI Scheme. doi:10.17487/RFC8089. RFC 8089. Retrieved October 16, 2018.
-2. RFC 8089, Section 2
-3. RFC 39861. The "file" URI Scheme. doi:10.17487/RFC8089. RFC 8089. Retrieved October 16, 2018.
-2. RFC 8089, Section 2
-3. RFC 39861. The "file" URI Scheme. doi:10.17487/RFC8089. RFC 8089. Retrieved October 16, 2018.
-2. RFC 8089, Section 2
-3. RFC 39861. The "file" URI Scheme. doi:10.17487/RFC8089. RFC 8089. Retrieved October 16, 2018.
-2. RFC 8089, Section 2
-3. RFC 39861. The "file" URI Scheme. doi:10.17487/RFC8089. RFC 8089. Retrieved October 16, 2018.
-2. RFC 8089, Section 2
-3. RFC 39861. The "file" URI Scheme. doi:10.17487/RFC8089. RFC 8089. Retrieved October 16, 2018.
-2. RFC 8089, Section 2
-3. RFC 3986, Section 3.2.2
-4. RFC 3986, Section 3.3
-5. RFC 8089, Appendix E
-6. Risney, Dave (2006). "File URIs in Windows". IEBlog., Section 3.2.2
-4. RFC 3986, Section 3.3
-5. RFC 8089, Appendix E
-6. Risney, Dave (2006). "File URIs in Windows". IEBlog., Section 3.2.2
-4. RFC 3986, Section 3.3
-5. RFC 8089, Appendix E
-6. Risney, Dave (2006). "File URIs in Windows". IEBlog., Section 3.2.2
-4. RFC 3986, Section 3.3
-5. RFC 8089, Appendix E
-6. Risney, Dave (2006). "File URIs in Windows". IEBlog., Section 3.2.2
-4. RFC 3986, Section 3.3
-5. RFC 8089, Appendix E
-6. Risney, Dave (2006). "File URIs in Windows". IEBlog., Section 3.2.2
-4. RFC 3986, Section 3.3
-5. RFC 8089, Appendix E
-6. Risney, Dave (2006). "File URIs in Windows". IEBlog. Microsoft Corporation. Retrieved 7.31 July 2013.
-8. File URIs in Windows - IEBlog - Site Home - MSDN Blogs. Blogs.msdn. Microsoft Corporation. Retrieved 7.31 July 2013.
-8. File URIs in Windows - IEBlog - Site Home - MSDN Blogs. Blogs.msdn. Microsoft Corporation. Retrieved 7.31 July 2013.
-8. File URIs in Windows - IEBlog - Site Home - MSDN Blogs. Blogs.msdn. Microsoft Corporation. Retrieved 7.31 July 2013.
-8. File URIs in Windows - IEBlog - Site Home - MSDN Blogs. Blogs.msdn. Microsoft Corporation. Retrieved 7.31 July 2013.
-8. File URIs in Windows - IEBlog - Site Home - MSDN Blogs. Blogs.msdn. Microsoft Corporation. Retrieved 7.31 July 2013.
-8. File URIs in Windows - IEBlog - Site Home - MSDN Blogs. Blogs.msdn.com (2006-12-06). 9.Retrieved on 2014-03-08.
-10. The Bizarre and Unhappy Story of 'file:' URLs - Free Associations - Sitcom (2006-12-06). 9.Retrieved on 2014-03-08.
-10. The Bizarre and Unhappy Story of 'file:' URLs - Free Associations - Sitcom (2006-12-06). 9.Retrieved on 2014-03-08.
-10. The Bizarre and Unhappy Story of 'file:' URLs - Free Associations - Sitcom (2006-12-06). 9.Retrieved on 2014-03-08.
-10. The Bizarre and Unhappy Story of 'file:' URLs - Free Associations - Sitcom (2006-12-06). 9.Retrieved on 2014-03-08.
-10. The Bizarre and Unhappy Story of 'file:' URLs - Free Associations - Sitcom (2006-12-06). 9.Retrieved on 2014-03-08.
-10. The Bizarre and Unhappy Story of 'file:' URLs - Free Associations - Site Home - MSDN 11.Blogs. Blogs.msdn.com (2005-05-19). Retrieved on 2014-03-08.e Home - MSDN 11.Blogs. Blogs.msdn.com (2005-05-19). Retrieved on 2014-03-08.e Home - MSDN 11.Blogs. Blogs.msdn.com (2005-05-19). Retrieved on 2014-03-08.e Home - MSDN 11.Blogs. Blogs.msdn.com (2005-05-19). Retrieved on 2014-03-08.e Home - MSDN 11.Blogs. Blogs.msdn.com (2005-05-19). Retrieved on 2014-03-08.e Home - MSDN 11.Blogs. Blogs.msdn.com (2005-05-19). Retrieved on 2014-03-08.
+10. The Bizarre and Unhappy Story of 'file:' URLs - Free Associations - Site Home - MSDN 11.Blogs. Blogs.msdn.com (2005-05-19). Retrieved on 2014-03-08.
