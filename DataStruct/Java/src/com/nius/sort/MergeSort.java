@@ -1,7 +1,6 @@
 package com.nius.sort;
 
-public class BubbleSort extends Sort {
-
+public class MergeSort<T extends Comparable<T>> extends Sort<T> {
     @Override
     protected void sort() {
 

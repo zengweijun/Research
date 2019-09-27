@@ -2,7 +2,7 @@ package com.nius.sort;
 
 import java.text.DecimalFormat;
 
-public abstract class Sort<T extends Comparable<T>> {
+public abstract class Sort<T extends Comparable<T>> implements Comparable<Sort<T>> {
     protected T[] array;
     private long time;
     private int swapCount;
@@ -61,5 +61,16 @@ public abstract class Sort<T extends Comparable<T>> {
                 + compareCountStr + "\t "
                 + swapCountStr + "\n"
                 + "------------------------------------------------------------------";
+    }
+
+    @Override
+    public int compareTo(Sort<T> o) {
+        int result = (int)(time - o.time);
+        if (result != 0) return result;
+
+        result = cmpCount - o.cmpCount;
+        if (result != 0) return result;
+
+        return swapCount - o.swapCount;
     }
 }
