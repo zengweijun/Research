@@ -1,5 +1,8 @@
 package com.nius.sort;
 
+import com.sun.tools.internal.xjc.reader.xmlschema.bindinfo.BIConversion;
+
+import java.sql.Statement;
 import java.text.DecimalFormat;
 
 public abstract class Sort<T extends Comparable<T>> implements Comparable<Sort<T>> {
@@ -49,14 +52,46 @@ public abstract class Sort<T extends Comparable<T>> implements Comparable<Sort<T
         return fmt.format(number / 100000000.0) + "亿";
     }
 
+    static class TestStableObj implements Comparable<TestStableObj> {
+        private int cmpValue;
+        private int checkValue;
+
+        public TestStableObj(int cmpValue, int checkValue) {
+            this.cmpValue = cmpValue;
+            this.checkValue = checkValue;
+        }
+
+        @Override
+        public int compareTo(TestStableObj o) {
+            return this.cmpValue - o.cmpValue;
+        }
+    }
+
+    boolean isStable() {
+        TestStableObj[] objs = new TestStableObj[20];
+        for (int i = 0; i < objs.length; i++) {
+            objs[i] = new TestStableObj(10, i*10);
+        }
+
+        sort((T[]) objs);
+
+        for (int i = 1; i < objs.length; i++) {
+            int checkValue = objs[i].checkValue;
+            int prevCheckValue = objs[i - 1].checkValue;
+            if (checkValue != prevCheckValue + 10) return false;
+        }
+        return true;
+    }
+
     @Override
     public String toString() {
         String timeStr = "耗时：" + (time / 1000.0) + "s(" + time + "ms)";
         String compareCountStr = "比较：" + numberString(cmpCount);
         String swapCountStr = "交换：" + numberString(swapCount);
-//        String stableStr = "稳定性：" + isStable();
+        // stableStr这个要放在最后，防止影响cmpCount，swapCount，time等成员变量的值
+        String stableStr = "稳定性：" + isStable();
         return "【" + getClass().getSimpleName() + "】\n"
-//                + stableStr + " \t"
+                + stableStr + " \t"
                 + timeStr + " \t"
                 + compareCountStr + "\t "
                 + swapCountStr + "\n"

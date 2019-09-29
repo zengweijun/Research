@@ -6,6 +6,7 @@ public class BubbleSort3<T extends Comparable<T>> extends Sort<T> {
 
     @Override
     protected void sort() {
+        // 从后往前排
         // 相邻两个元素两两比较，大的一个放后边
         // 冒泡排序总思想，每一趟排序完成，最后一个一定最大(或者最小)
         // 所以保证下一次参与排序的数都会少一个
