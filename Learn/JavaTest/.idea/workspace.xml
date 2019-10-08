@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9fa99ac7-235b-4bd3-8075-280cf9c51232" name="Default Changelist" comment="">
+    <list default="true" id="f230340d-a8d3-4ba3-a688-b5d11b1e5b29" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../../Algorithm/Java/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithm/Java/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DataStruct/Java/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../DataStruct/Java/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,7 +14,8 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="ProjectId" id="1RvPdRPGu3YNRhbl97WhqCBXuem" />
+  <component name="ProjectId" id="1RvQtA6dLEqFgrvJ63q5shtVL2k" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -36,14 +38,12 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="9fa99ac7-235b-4bd3-8075-280cf9c51232" name="Default Changelist" comment="" />
-      <created>1570544683436</created>
+      <changelist id="f230340d-a8d3-4ba3-a688-b5d11b1e5b29" name="Default Changelist" comment="" />
+      <created>1570545301759</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1570544683436</updated>
-      <workItem from="1570544684702" duration="2000" />
-      <workItem from="1570545011839" duration="4000" />
-      <workItem from="1570545281326" duration="1000" />
+      <updated>1570545301759</updated>
+      <workItem from="1570545310429" duration="3000" />
     </task>
     <servers />
   </component>
@@ -55,9 +55,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
