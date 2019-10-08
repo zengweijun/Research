@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9fa99ac7-235b-4bd3-8075-280cf9c51232" name="Default Changelist" comment="" />
+    <list default="true" id="9fa99ac7-235b-4bd3-8075-280cf9c51232" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Learn/java/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Learn/java/.idea/vcs.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +42,7 @@
       <option name="presentableId" value="Default" />
       <updated>1570544683436</updated>
       <workItem from="1570544684702" duration="2000" />
+      <workItem from="1570545011839" duration="4000" />
     </task>
     <servers />
   </component>
@@ -51,7 +54,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
