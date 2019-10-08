@@ -4,7 +4,7 @@
     <list default="true" id="9fa99ac7-235b-4bd3-8075-280cf9c51232" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/nius/search/BinarySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/search/BinarySearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DataStruct/Java/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../DataStruct/Java/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/sort/tools/Asserts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/sort/tools/Asserts.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,7 +33,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.BinarySearch">
+    <configuration name="BinarySearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.nius.search.BinarySearch" />
+      <module name="Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nius.search.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.nius.Main" />
       <module name="Java" />
@@ -49,6 +62,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BinarySearch" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -66,7 +80,7 @@
       <workItem from="1570544684702" duration="2000" />
       <workItem from="1570545037305" duration="1000" />
       <workItem from="1570545270120" duration="3000" />
-      <workItem from="1570545320052" duration="269000" />
+      <workItem from="1570545320052" duration="3994000" />
     </task>
     <servers />
   </component>
