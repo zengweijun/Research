@@ -48,24 +48,6 @@ public class BinarySearch {
         return INDEX_NOT_FOUND;
     }
 
-    public static void main(String[] args) {
-        int[] arr = {1, 3, 5, 6, 8, 11};
-
-        Asserts.test((indexOf(arr, 0) == INDEX_NOT_FOUND), "找0");
-        Asserts.test((indexOf(arr, 1) == 0), "找1");
-        Asserts.test((indexOf(arr, 3) == 1), "找3");
-        Asserts.test((indexOf(arr, 5) == 2), "找4");
-        Asserts.test((indexOf(arr, 6) == 3), "找6");
-        Asserts.test((indexOf(arr, 8) == 4), "找8");
-        Asserts.test((indexOf(arr, 11) == 5), "找11");
-        Asserts.test((indexOf(arr, 12) == INDEX_NOT_FOUND), "找12");
-
-
-        Asserts.test((searchFitIndex(arr, 3) == 2), "3找到适合位置");
-        Asserts.test((searchFitIndex(arr, 7) == 4), "7找到适合位置");
-        Asserts.test((searchFitIndex(arr, 12) == 6), "12找到适合位置");
-    }
-
 
     /** 查找value适合插入有序数组中的哪个位置 */
     public static int searchFitIndex(int[] arr, int value) {
@@ -92,5 +74,23 @@ public class BinarySearch {
         }
 
         return begin; // return end
+    }
+
+    public static void main(String[] args) {
+        int[] arr = {1, 3, 5, 6, 8, 11};
+
+        Asserts.test((indexOf(arr, 0) == INDEX_NOT_FOUND), "找0");
+        Asserts.test((indexOf(arr, 1) == 0), "找1");
+        Asserts.test((indexOf(arr, 3) == 1), "找3");
+        Asserts.test((indexOf(arr, 5) == 2), "找4");
+        Asserts.test((indexOf(arr, 6) == 3), "找6");
+        Asserts.test((indexOf(arr, 8) == 4), "找8");
+        Asserts.test((indexOf(arr, 11) == 5), "找11");
+        Asserts.test((indexOf(arr, 12) == INDEX_NOT_FOUND), "找12");
+
+
+        Asserts.test((searchFitIndex(arr, 3) == 2), "3找到适合位置");
+        Asserts.test((searchFitIndex(arr, 7) == 4), "7找到适合位置");
+        Asserts.test((searchFitIndex(arr, 12) == 6), "12找到适合位置");
     }
 }

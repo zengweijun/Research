@@ -26,6 +26,7 @@ public class Main {
 
     public static void testSort() {
         Integer[] arr1 = Integers.random(50000, 1, 30000);
+//        Integer[] arr1 = Integers.random(1000, 1, 200);
         testSort(arr1,
                 new BubbleSort1(),
                 new BubbleSort2(),
@@ -33,7 +34,8 @@ public class Main {
                 new SelectionSort(),
                 new HeapSort(),
                 new InsertionSort1(),
-                new InsertionSort2()
+                new InsertionSort2(),
+                new InsertionSort3()
         );
     }
 
