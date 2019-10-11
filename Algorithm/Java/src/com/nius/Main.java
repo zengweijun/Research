@@ -4,11 +4,12 @@ import com.nius.sort.*;
 import com.nius.sort.bubble.BubbleSort1;
 import com.nius.sort.bubble.BubbleSort2;
 import com.nius.sort.bubble.BubbleSort3;
+import com.nius.sort.insert.InsertionSort1;
+import com.nius.sort.insert.InsertionSort2;
+import com.nius.sort.insert.InsertionSort3;
 import com.nius.sort.tools.Asserts;
 import com.nius.sort.tools.Integers;
-import com.nius.sort.tools.Times;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class Main {

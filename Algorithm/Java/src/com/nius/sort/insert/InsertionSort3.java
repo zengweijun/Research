@@ -1,6 +1,6 @@
-package com.nius.sort;
+package com.nius.sort.insert;
 
-import com.nius.Main;
+import com.nius.sort.Sort;
 import com.nius.sort.tools.Integers;
 
 public class InsertionSort3<T extends Comparable<T>> extends Sort<T> {

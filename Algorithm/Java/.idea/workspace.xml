@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9fa99ac7-235b-4bd3-8075-280cf9c51232" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/nius/sort/InsertionSort3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/nius/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nius/search/BinarySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/search/BinarySearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/sort/InsertionSort1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/sort/insert/InsertionSort1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/sort/InsertionSort2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/sort/insert/InsertionSort2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/sort/InsertionSort3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/sort/insert/InsertionSort3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/sort/MergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/sort/MergeSort.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,11 +60,11 @@
       </method>
     </configuration>
     <configuration name="InsertionSort3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.nius.sort.InsertionSort3" />
+      <option name="MAIN_CLASS_NAME" value="com.nius.sort.insert.InsertionSort3" />
       <module name="Java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.nius.sort.*" />
+          <option name="PATTERN" value="com.nius.sort.insert.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -108,6 +110,7 @@
       <workItem from="1570601108847" duration="1216000" />
       <workItem from="1570615946958" duration="851000" />
       <workItem from="1570686335344" duration="2678000" />
+      <workItem from="1570801705192" duration="1587000" />
     </task>
     <servers />
   </component>
