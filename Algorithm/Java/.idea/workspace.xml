@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9fa99ac7-235b-4bd3-8075-280cf9c51232" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/nius/sort/QuickSort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/com/nius/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/com/nius/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/com/nius/sort/InsertionSort1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/com/nius/sort/InsertionSort2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/com/nius/sort/InsertionSort3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/com/nius/sort/MergeSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/com/nius/sort/MergeSort.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/nius/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nius/sort/InsertionSort1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/sort/insert/InsertionSort1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nius/sort/InsertionSort2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/sort/insert/InsertionSort2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nius/sort/InsertionSort3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/sort/insert/InsertionSort3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/nius/sort/MergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/sort/MergeSort.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,6 +17,13 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
