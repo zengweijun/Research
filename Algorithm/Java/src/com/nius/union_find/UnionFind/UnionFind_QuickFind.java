@@ -1,5 +1,6 @@
-package com.nius.union_find;
+package com.nius.union_find.UnionFind;
 
+// Find O(1)  union O(n)
 public class UnionFind_QuickFind extends UnionFind {
     // Find O(1)  union O(n)
     // 不过一般不建议使用，因为这个union效率太低

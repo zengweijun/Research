@@ -1,4 +1,8 @@
-package com.nius.union_find;
+package com.nius.union_find.UnionFind;
+
+// 使用基于rank、size的 + 路劲压缩、分裂、减半 优化
+// 最终优化可以确保每次操作的时间复杂度 O(α(n)) α(n)<5
+// 建议：Rank + PathHalving 或 + PathSpliting
 
 /** 并查集
  * [0, 1, 2, 3, 4, 5, 6] 编号(索引)

@@ -1,47 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9fa99ac7-235b-4bd3-8075-280cf9c51232" name="Default Changelist" comment="" />
     <list default="true" id="9fa99ac7-235b-4bd3-8075-280cf9c51232" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/nius/unionFind/MainUnionFind.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/nius/unionFind/UnionFind.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/nius/unionFind/UnionFind_QuickFind.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/nius/unionFind/UnionFind_QuickUnion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/nius/union_find/UnionFind/GenericUnionFind.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/nius/union_find/UnionFind/UnionFind_QuickUnion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/nius/union_find/UnionFind/UnionFind_QuickUnion_Rank.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/nius/union_find/UnionFind/UnionFind_QuickUnion_Rank_PathCompression.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/nius/union_find/UnionFind/UnionFind_QuickUnion_Rank_PathHalving.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/nius/union_find/UnionFind/UnionFind_QuickUnion_Rank_PathSpliting.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/nius/union_find/UnionFind/UnionFind_QuickUnion_Size.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/com/nius/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/com/nius/search/BinarySearch.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/com/nius/search/BinarySearch.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/com/nius/sort/HeapSort.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/com/nius/sort/MergeSort.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/com/nius/sort/QuickSort.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/com/nius/sort/SelectionSort.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/com/nius/sort/Sort$TestStableObj.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/com/nius/sort/Sort.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/com/nius/sort/bubble/BubbleSort1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/com/nius/sort/bubble/BubbleSort2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/com/nius/sort/bubble/BubbleSort3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/com/nius/sort/insert/InsertionSort1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/com/nius/sort/insert/InsertionSort2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/com/nius/sort/insert/InsertionSort3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/com/nius/sort/tools/Asserts.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/com/nius/sort/tools/Integers.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/com/nius/sort/tools/Times$Task.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/com/nius/sort/tools/Times.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nius/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/sort/MainSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nius/search/BinarySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/search/BinarySearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nius/sort/HeapSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/sort/compare/HeapSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nius/sort/MergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/sort/compare/MergeSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nius/sort/QuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/sort/compare/QuickSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nius/sort/SelectionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/sort/compare/SelectionSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nius/sort/Sort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/sort/compare/Sort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nius/sort/bubble/BubbleSort1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/sort/compare/bubble/BubbleSort1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nius/sort/bubble/BubbleSort2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/sort/compare/bubble/BubbleSort2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nius/sort/bubble/BubbleSort3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/sort/compare/bubble/BubbleSort3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nius/sort/insert/InsertionSort1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/sort/compare/insert/InsertionSort1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nius/sort/insert/InsertionSort2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/sort/compare/insert/InsertionSort2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nius/sort/insert/InsertionSort3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/sort/compare/insert/InsertionSort3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nius/sort/tools/Asserts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/tools/Asserts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nius/sort/tools/Integers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/tools/Integers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nius/sort/tools/Times.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/tools/Times.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/com/nius/union_find/MainUnionFind.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/com/nius/union_find/UnionFind.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/com/nius/union_find/UnionFind_QuickFind.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/com/nius/union_find/UnionFind_QuickUnion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/union_find/MainUnionFind.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/union_find/MainUnionFindTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/union_find/UnionFind.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/union_find/UnionFind/UnionFind.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/union_find/UnionFind_QuickFind.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/union_find/UnionFind/UnionFind_QuickFind.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/union_find/UnionFind_QuickUnion.java" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -76,6 +52,7 @@
       <recent name="com.nius.sort" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.nius.union_find" />
       <recent name="com.nius.sort" />
     </key>
   </component>
@@ -91,7 +68,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MainUnionFind">
+  <component name="RunManager">
     <configuration name="BinarySearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.nius.search.BinarySearch" />
       <module name="Java" />
@@ -131,12 +108,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainUnionFind" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.nius.union_find.MainUnionFind" />
+    <configuration name="MainUnionFindTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.nius.union_find.MainUnionFindTest" />
       <module name="Java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.nius.union_find.*" />
+          <option name="PATTERN" value="com.nius.union_find.UnionFind.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -146,7 +123,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MainUnionFind" />
+        <item itemvalue="Application.MainUnionFindTest" />
         <item itemvalue="Application.MainSort" />
         <item itemvalue="Application.InsertionSort3" />
         <item itemvalue="Application.BinarySearch" />
@@ -173,6 +150,7 @@
       <workItem from="1570801705192" duration="1587000" />
       <workItem from="1571232003627" duration="73000" />
       <workItem from="1571363891032" duration="5802000" />
+      <workItem from="1571657479277" duration="8641000" />
     </task>
     <servers />
   </component>
