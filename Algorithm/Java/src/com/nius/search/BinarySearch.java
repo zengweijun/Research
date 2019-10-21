@@ -1,9 +1,6 @@
 package com.nius.search;
 
-import com.nius.sort.tools.Asserts;
-import sun.security.util.Length;
-
-import java.util.logging.Level;
+import com.nius.tools.Asserts;
 
 public class BinarySearch {
 
