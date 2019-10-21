@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9fa99ac7-235b-4bd3-8075-280cf9c51232" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/nius/sort/QuickSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/com/nius/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/com/nius/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/com/nius/sort/InsertionSort1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/com/nius/sort/InsertionSort2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/com/nius/sort/InsertionSort3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/com/nius/sort/MergeSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/com/nius/sort/MergeSort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nius/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nius/sort/MergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/sort/MergeSort.java" afterDir="false" />
-    </list>
+    <list default="true" id="9fa99ac7-235b-4bd3-8075-280cf9c51232" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,6 +111,7 @@
       <workItem from="1570615946958" duration="851000" />
       <workItem from="1570686335344" duration="2678000" />
       <workItem from="1570801705192" duration="1587000" />
+      <workItem from="1571232003627" duration="73000" />
     </task>
     <servers />
   </component>
