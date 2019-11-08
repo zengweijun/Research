@@ -2,8 +2,191 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f230340d-a8d3-4ba3-a688-b5d11b1e5b29" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/nius/foundation/tcp/base/MyClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/nius/foundation/tcp/base/MyServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/nius/foundation/tcp/base/MyServer1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/nius/foundation/tcp/chat/demo1/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/nius/foundation/tcp/chat/demo1/Server.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/nius/foundation/tcp/chat/demo2/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/nius/foundation/tcp/chat/demo2/CloseIOUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/nius/foundation/tcp/chat/demo2/Server.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/nius/foundation/udp/attachType/MyClient1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/nius/foundation/udp/attachType/MyServer1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/nius/foundation/udp/base/MyClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/nius/foundation/udp/base/MyServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/nius/server/XMLParser/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/nius/server/XMLParser/XMLParse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/nius/server/XMLParser/person.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/nius/server/demo01/Server01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/nius/server/servlet/Entity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/nius/server/servlet/LoginServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/nius/server/servlet/Mapping.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/nius/server/servlet/RegisterServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/nius/server/servlet/Servlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/nius/server/servlet/WebContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/nius/server/servlet/WebParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/nius/server/servlet/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Algorithm/Java/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithm/Java/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DataStruct/Java/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../DataStruct/Java/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DataStruct/OC/DataStruct-OC/DataStruct-OC.xcodeproj/project.xcworkspace/xcuserdata/nius.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/../../DataStruct/OC/DataStruct-OC/DataStruct-OC.xcodeproj/project.xcworkspace/xcuserdata/nius.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DataStruct/OC/DataStruct-OC/DataStruct-OC.xcodeproj/xcuserdata/nius.xcuserdatad/xcschemes/xcschememanagement.plist" beforeDir="false" afterPath="$PROJECT_DIR$/../../DataStruct/OC/DataStruct-OC/DataStruct-OC.xcodeproj/xcuserdata/nius.xcuserdatad/xcschemes/xcschememanagement.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaTest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JavaTest.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/Net/URL_URI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Net/URL_URI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/BytesStream/CopyFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/BytesStream/CopyFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/BytesStream/ReadFromFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/BytesStream/ReadFromFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/BytesStream/Reader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/BytesStream/Reader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/BytesStream/WriteToFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/BytesStream/WriteToFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/BytesStream/Writer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/BytesStream/Writer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/CharStream/CopyFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/CharStream/CopyFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/CharStream/ReadFromFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/CharStream/ReadFromFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/CharStream/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/CharStream/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/CharStream/WriteToFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/CharStream/WriteToFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/bjsxt/io/buffered/BufferedByteDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/bjsxt/io/buffered/BufferedByteDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/bjsxt/io/buffered/BufferedCharDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/bjsxt/io/buffered/BufferedCharDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/bjsxt/io/byteIO/CopyDir.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/bjsxt/io/byteIO/CopyDir.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/bjsxt/io/byteIO/CopyFileDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/bjsxt/io/byteIO/CopyFileDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/bjsxt/io/byteIO/Demo01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/bjsxt/io/byteIO/Demo01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/bjsxt/io/byteIO/Demo02.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/bjsxt/io/byteIO/Demo02.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/bjsxt/io/byteIO/FileUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/bjsxt/io/byteIO/FileUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/bjsxt/io/charIO/CopyFileDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/bjsxt/io/charIO/CopyFileDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/bjsxt/io/charIO/Demo01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/bjsxt/io/charIO/Demo01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/bjsxt/io/charIO/Demo02.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/bjsxt/io/charIO/Demo02.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/bjsxt/io/convert/ConverDemo01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/bjsxt/io/convert/ConverDemo01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/bjsxt/io/convert/ConverDemo02.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/bjsxt/io/convert/ConverDemo02.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/bjsxt/io/file/Demo01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/bjsxt/io/file/Demo01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/bjsxt/io/file/Demo02.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/bjsxt/io/file/Demo02.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/bjsxt/io/file/Demo03.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/bjsxt/io/file/Demo03.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/bjsxt/io/file/Demo04.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/bjsxt/io/file/Demo04.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/bjsxt/io/file/Demo05.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/bjsxt/io/file/Demo05.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/bjsxt/io/others/BuffereIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/bjsxt/io/others/BuffereIn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/bjsxt/io/others/ByteArrayDemo01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/bjsxt/io/others/ByteArrayDemo01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/bjsxt/io/others/ByteArrayDemo02.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/bjsxt/io/others/ByteArrayDemo02.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/bjsxt/io/others/DataDemo01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/bjsxt/io/others/DataDemo01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/bjsxt/io/others/DataDemo02.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/bjsxt/io/others/DataDemo02.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/bjsxt/io/others/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/bjsxt/io/others/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/bjsxt/io/others/ObjectDemo01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/bjsxt/io/others/ObjectDemo01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/bjsxt/io/others/PrintStreamDemo01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/bjsxt/io/others/PrintStreamDemo01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/bjsxt/io/others/RndDemo01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/bjsxt/io/others/RndDemo01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/bjsxt/io/others/SplitFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/bjsxt/io/others/SplitFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/bjsxt/io/others/SystemDemo01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/bjsxt/io/others/SystemDemo01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/bjsxt/io/pattern/Amplifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/bjsxt/io/pattern/Amplifier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/bjsxt/io/pattern/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/bjsxt/io/pattern/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/bjsxt/io/pattern/Voice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/bjsxt/io/pattern/Voice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/bjsxt/io/util/CopyFileDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/bjsxt/io/util/CopyFileDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/bjsxt/io/util/FileUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/bjsxt/io/util/FileUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/normal/文件创建与删除.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/normal/文件创建与删除.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/normal/文件路径.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/normal/文件路径.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/test/12345/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/test/12345/test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/test/33333333.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/test/33333333.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/test/33333333/33333333_part0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/test/33333333/33333333_part0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/test/33333333/33333333_part1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/test/33333333/33333333_part1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/test/33333333/33333333_part2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/test/33333333/33333333_part2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/test/33333333/33333333_part3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/test/33333333/33333333_part3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/test/33333333/33333333_part4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/test/33333333/33333333_part4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/test/33333333/kkkkkk.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/test/33333333/kkkkkk.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/test/abc/2019.9.5.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/test/abc/2019.9.5.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/test/abc/2019.9.5.rtfd/Pasted Graphic.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/test/abc/2019.9.5.rtfd/Pasted Graphic.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/test/abc/2019.9.5.rtfd/TXT.rtf" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/test/abc/2019.9.5.rtfd/TXT.rtf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/test/abc/dddd/eee/test12345.rtf" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/test/abc/dddd/eee/test12345.rtf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/test/abc/dddd/eee/test123456.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/test/abc/dddd/eee/test123456.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/test/abc/test12345.rtf" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/test/abc/test12345.rtf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/test/abc/test123456.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/test/abc/test123456.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/test/abc/test资源/129284700_14741694437441n.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/test/abc/test资源/129284700_14741694437441n.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/test/abc/test资源/52379A0A-CA27-4BFF-91BA-13F41C78C243_cx0_cy6_cw0_w1023_r1_s.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/test/abc/test资源/52379A0A-CA27-4BFF-91BA-13F41C78C243_cx0_cy6_cw0_w1023_r1_s.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/test/abc/test资源/dingtalk/dingtalk_tweak.plist" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/test/abc/test资源/dingtalk/dingtalk_tweak.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/test/abc/test资源/dingtalk/dingtalk_tweak.zip" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/test/abc/test资源/dingtalk/dingtalk_tweak.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/test/abc/test资源/test.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/test/abc/test资源/test.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/test/abc/test资源/截屏2019-07-2010.10.28.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/test/abc/test资源/截屏2019-07-2010.10.28.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/test/abc/test资源/林郑月娥见记者：绝不许触碰“一国两制”底线 - BBC News 中文.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/test/abc/test资源/林郑月娥见记者：绝不许触碰“一国两制”底线 - BBC News 中文.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/test/abc/xxxx/计算机网络_谢希仁_PPT/01.pptx" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/test/abc/xxxx/计算机网络_谢希仁_PPT/01.pptx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/test/abc/xxxx/计算机网络_谢希仁_PPT/02.pptx" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/test/abc/xxxx/计算机网络_谢希仁_PPT/02.pptx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/test/abc/xxxx/计算机网络_谢希仁_PPT/03.pptx" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/test/abc/xxxx/计算机网络_谢希仁_PPT/03.pptx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/test/abc/xxxx/计算机网络_谢希仁_PPT/04.pptx" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/test/abc/xxxx/计算机网络_谢希仁_PPT/04.pptx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/test/abc/xxxx/计算机网络_谢希仁_PPT/05.pptx" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/test/abc/xxxx/计算机网络_谢希仁_PPT/05.pptx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/test/abc/xxxx/计算机网络_谢希仁_PPT/06.pptx" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/test/abc/xxxx/计算机网络_谢希仁_PPT/06.pptx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/test/abc/xxxx/计算机网络_谢希仁_PPT/07.pptx" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/test/abc/xxxx/计算机网络_谢希仁_PPT/07.pptx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/test/abc/xxxx/计算机网络_谢希仁_PPT/08.pptx" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/test/abc/xxxx/计算机网络_谢希仁_PPT/08.pptx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/test/abc/xxxx/计算机网络_谢希仁_PPT/09.pptx" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/test/abc/xxxx/计算机网络_谢希仁_PPT/09.pptx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/test/abc/xxxx/计算机网络原理 - 杨明福.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/test/abc/xxxx/计算机网络原理 - 杨明福.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/test/kkkkkk.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/test/kkkkkk.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/test/test-----.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/test/test-----.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/test/test-----/kkkkkk.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/test/test-----/kkkkkk.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/test/test-----/test-----_part0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/test/test-----/test-----_part0.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/test/test-----/test-----_part1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/test/test-----/test-----_part1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/test/test-----/test-----_part2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/test/test-----/test-----_part2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/test/test-----/test-----_part3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/test/test-----/test-----_part3.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/test/test-----/test-----_part4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/test/test-----/test-----_part4.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/test/test.docx" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/test/test.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/test/test.rtf" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/test/test.rtf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/test/test123.docx" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/test/test123.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/test/test123.rtf" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/test/test123.rtf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/test/test12345.rtf" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/test/test12345.rtf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/test/test123456.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/test/test123456.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/util/FileUtil1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/util/FileUtil1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/util/FileUtil2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/util/FileUtil2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/util/WJTools.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/util/WJTools.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/字符乱码/Convert1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/字符乱码/Convert1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/字符乱码/Convert2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/字符乱码/Convert2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/字符乱码/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/字符乱码/package-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/文件分割合并/FileSplitMerge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/文件分割合并/FileSplitMerge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/文件分割合并/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/文件分割合并/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/IO/文件分割合并/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/IO/文件分割合并/package-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/InnerClass/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/InnerClass/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/Integer/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/Integer/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/date/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/date/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/exception/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/exception/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/file/FileInfos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/file/FileInfos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/file/PrintFileList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/file/PrintFileList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/file/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/file/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/polymorphism/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/polymorphism/Human.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/polymorphism/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/polymorphism/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/polymorphism/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/polymorphism/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/polymorphism/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/polymorphism/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/polymorphism/YellowMan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/polymorphism/YellowMan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/sort/冒泡排序.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/sort/冒泡排序.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/thread/MyThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/thread/MyThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/thread/Rabbit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/thread/Rabbit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/thread/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/foundation/thread/package-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/.idea/$PRODUCT_WORKSPACE_FILE$" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/java.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/out/production/java/META-INF/java.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/out/production/java/com/nius/tcp/base/MyClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/out/production/java/com/nius/tcp/base/MyServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/out/production/java/com/nius/tcp/base/MyServer1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/out/production/java/com/nius/tcp/chat/demo1/Client.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/out/production/java/com/nius/tcp/chat/demo1/Server.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/out/production/java/com/nius/tcp/chat/demo2/Client$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/out/production/java/com/nius/tcp/chat/demo2/Client$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/out/production/java/com/nius/tcp/chat/demo2/Client.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/out/production/java/com/nius/tcp/chat/demo2/CloseIOUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/out/production/java/com/nius/tcp/chat/demo2/Server$ClientProxy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/out/production/java/com/nius/tcp/chat/demo2/Server.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/out/production/java/com/nius/udp/attachType/MyClient1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/out/production/java/com/nius/udp/attachType/MyServer1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/out/production/java/com/nius/udp/base/MyClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/out/production/java/com/nius/udp/base/MyServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/src/com/nius/tcp/base/MyClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/src/com/nius/tcp/base/MyServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/src/com/nius/tcp/base/MyServer1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/src/com/nius/tcp/chat/demo1/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/src/com/nius/tcp/chat/demo1/Server.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/src/com/nius/tcp/chat/demo2/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/src/com/nius/tcp/chat/demo2/CloseIOUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/src/com/nius/tcp/chat/demo2/Server.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/src/com/nius/udp/attachType/MyClient1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/src/com/nius/udp/attachType/MyServer1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/src/com/nius/udp/base/MyClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/src/com/nius/udp/base/MyServer.java" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,15 +194,37 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="Tag Library Descriptor" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="ProjectId" id="1RvQtA6dLEqFgrvJ63q5shtVL2k" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com/nius/server/servlet" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/com/nius/server/servlet" />
+      <recent name="$PROJECT_DIR$/src/com/nius" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/com/nius/server/XMLParser" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -33,6 +238,54 @@
       </list>
     </option>
   </component>
+  <component name="RunManager" selected="Application.Server01">
+    <configuration name="Server01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.nius.server.demo01.Server01" />
+      <module name="JavaTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nius.server.demo01.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebParser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.nius.server.servlet.WebParser" />
+      <module name="JavaTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nius.server.servlet.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="XMLParse" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.nius.server.XMLParse" />
+      <module name="JavaTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nius.server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Server01" />
+        <item itemvalue="Application.WebParser" />
+        <item itemvalue="Application.XMLParse" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -44,6 +297,8 @@
       <option name="presentableId" value="Default" />
       <updated>1570545301759</updated>
       <workItem from="1570545310429" duration="3000" />
+      <workItem from="1573124151805" duration="4133000" />
+      <workItem from="1573131644121" duration="14441000" />
     </task>
     <servers />
   </component>
@@ -55,7 +310,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

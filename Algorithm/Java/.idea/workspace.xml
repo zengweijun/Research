@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9fa99ac7-235b-4bd3-8075-280cf9c51232" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/nius/union_find/UnionFind/GenericUnionFind.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/nius/union_find/UnionFind/UnionFind_QuickUnion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/nius/union_find/UnionFind/UnionFind_QuickUnion_Rank.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/nius/union_find/UnionFind/UnionFind_QuickUnion_Rank_PathCompression.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/nius/union_find/UnionFind/UnionFind_QuickUnion_Rank_PathHalving.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/nius/union_find/UnionFind/UnionFind_QuickUnion_Rank_PathSpliting.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/nius/union_find/UnionFind/UnionFind_QuickUnion_Size.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/com/nius/union_find/MainUnionFind.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/com/nius/union_find/UnionFind.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/com/nius/union_find/UnionFind_QuickFind.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/com/nius/union_find/UnionFind_QuickUnion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nius/union_find/MainUnionFind.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/union_find/MainUnionFindTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nius/union_find/UnionFind.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/union_find/UnionFind/UnionFind.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nius/union_find/UnionFind_QuickFind.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/union_find/UnionFind/UnionFind_QuickFind.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nius/union_find/UnionFind_QuickUnion.java" beforeDir="false" />
-    </list>
+    <list default="true" id="9fa99ac7-235b-4bd3-8075-280cf9c51232" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +51,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.BinarySearch">
     <configuration name="BinarySearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.nius.search.BinarySearch" />
       <module name="Java" />
@@ -151,6 +134,7 @@
       <workItem from="1571232003627" duration="73000" />
       <workItem from="1571363891032" duration="5802000" />
       <workItem from="1571657479277" duration="8641000" />
+      <workItem from="1573024157334" duration="8000" />
     </task>
     <servers />
   </component>
