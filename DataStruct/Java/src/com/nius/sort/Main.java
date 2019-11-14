@@ -1,4 +1,4 @@
-package com.nius;
+package com.nius.sort;
 
 import com.nius.sort.*;
 import com.nius.sort.bubble.BubbleSort1;
