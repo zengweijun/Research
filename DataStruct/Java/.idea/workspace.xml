@@ -2,12 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9fa99ac7-235b-4bd3-8075-280cf9c51232" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/nius/graph/Graph.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/nius/graph/ListGraph.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/nius/graph/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Algorithm/Java/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithm/Java/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/nius/graph/resources/graph_02.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nius/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/sort/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/com/nius/graph/ListGraph$Edge.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/com/nius/graph/ListGraph$Edge.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/com/nius/graph/ListGraph$Vertex.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/com/nius/graph/ListGraph$Vertex.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/com/nius/graph/ListGraph.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/com/nius/graph/ListGraph.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/com/nius/graph/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/com/nius/graph/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/graph/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/graph/Graph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/graph/ListGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/graph/ListGraph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/graph/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/graph/Main.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,7 +36,15 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com/nius/graph/resources" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/com/nius/graph/resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/com/nius/graph/resources" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -81,6 +92,8 @@
       <workItem from="1570545011839" duration="4000" />
       <workItem from="1570545281326" duration="1000" />
       <workItem from="1573707953011" duration="6369000" />
+      <workItem from="1573736707254" duration="3250000" />
+      <workItem from="1573794754004" duration="3506000" />
     </task>
     <servers />
   </component>

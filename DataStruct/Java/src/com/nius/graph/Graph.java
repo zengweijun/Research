@@ -15,4 +15,8 @@ public interface Graph<V, E> {
     void removeVertex(V v);
     // 删除一条边
     void removeEdge(V from, V to);
+
+    /// 遍历
+    // 广度优先搜索（宽度优先、横向优先）【层序遍历】
+    void bfs(V begin);
 }
