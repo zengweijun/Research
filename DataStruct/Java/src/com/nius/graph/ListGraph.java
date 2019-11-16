@@ -222,7 +222,8 @@ public class ListGraph<V, E> implements Graph<V, E> {
     }
 
     @Override
-    public void bfs(V begin) {
+    public void bfs(V begin, VertexVisitor<V> visitor) {
+        if (visitor == null) return;
         Vertex<V, E> beginVertex = vertices.get(begin);
         if (beginVertex == null) return;
 
@@ -235,13 +236,61 @@ public class ListGraph<V, E> implements Graph<V, E> {
 
         while (!queue.isEmpty()) {
             Vertex<V, E> vertex = queue.poll();
-            System.out.println(vertex.value);
+            if (visitor.visit(vertex.value)) return;
 
             // 将出度集合入队
             for (Edge<V, E> e : vertex.outEdges) {
                 if (visitedVertices.contains(e.to)) continue;
                 queue.offer(e.to);
                 visitedVertices.add(e.to);
+            }
+        }
+    }
+
+    @Override
+    public void dfs(V begin, VertexVisitor<V> visitor) {
+        if (visitor == null) return;
+        Vertex<V, E> vt = vertices.get(begin);
+        if (vt == null) return;
+
+//        dfs1(vt, new HashSet<>());
+        dfs2(vt, visitor);
+    }
+
+    private void dfs1(Vertex<V, E> beginVt, Set<Vertex<V, E>> visitedVertices) {
+        // 递归版
+        System.out.println(beginVt.value);
+        visitedVertices.add(beginVt);
+
+        for (Edge<V, E> e : beginVt.outEdges) {
+            if (visitedVertices.contains(e.to)) continue;
+            dfs1(e.to, visitedVertices);
+        }
+    }
+
+    public void dfs2(Vertex<V, E> beginVt, VertexVisitor<V> visitor) {
+        // 非递归版
+
+        Set<Vertex<V, E>> visitedVertices = new HashSet<>();
+        Stack<Vertex<V, E>> stack = new Stack<>();
+
+        stack.push(beginVt);                        // 1.先入栈起点
+        if (visitor.visit(beginVt.value)) return;   // 2.访问
+        visitedVertices.add(beginVt);               // 3.记录该点
+
+        while (!stack.isEmpty()) {
+            // 4.边的顶点出栈
+            Vertex<V, E> vt = stack.pop();
+
+            // 5.找到vt其中一条边，边的起、终点入栈（边的起点即为vt）
+            for (Edge<V, E> e : vt.outEdges) {
+                if (visitedVertices.contains(e.to)) continue;
+
+                stack.push(vt);     // 边的起点 stack.push(e.from);
+                stack.push(e.to);   // 边的终点
+                if (visitor.visit(e.to.value)) return;
+                visitedVertices.add(e.to);
+                break;
             }
         }
     }

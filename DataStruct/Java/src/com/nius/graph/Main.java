@@ -2,10 +2,37 @@ package com.nius.graph;
 
 public class Main {
     public static void main(String[] args) {
-         testListGraph01();
+//         testListGraph01();
 //        testListGraph02();
+//        testBfs();
+        testDfs();
     }
 
+
+    public static void testDfs() {
+//        Graph<Object, Double> graph = undirectedGraph(Data.DFS_01);
+//        graph.dfs(1);
+
+//        Graph<Object, Double> graph = directedGraph(Data.DFS_02);
+//        graph.dfs("a");
+
+        Graph<Object, Double> graph = undirectedGraph(Data.DFS_02);
+        graph.dfs("e", (Object o)->{
+            System.out.println(o);
+            return o.equals("c");
+        });
+    }
+
+    public static void testBfs() {
+//        Graph<Object, Double> graph = undirectedGraph(Data.BFS_01);
+//        Graph<Object, Double> graph = directedGraph(Data.BFS_02);
+//        Graph<Object, Double> graph = undirectedGraph(Data.BFS_03);
+        Graph<Object, Double> graph = directedGraph(Data.BFS_04);
+        graph.bfs(5, (Object o)->{
+            System.out.println(o);
+            return o.equals(7);
+        });
+    }
 
     public static void testListGraph02() {
         // 无向图(将有向图改为双向，即可表示无向图)
@@ -44,7 +71,39 @@ public class Main {
         // 删边
 //        graph.removeVertex("V1");
 //        graph.print();
-        // 遍历
-        graph.bfs("V1");
+    }
+
+    /** 有向图 */
+    private static Graph<Object, Double> directedGraph(Object[][] data) {
+        Graph<Object, Double> graph = new ListGraph<>();
+        for (Object[] edge : data) {
+            if (edge.length == 1) {
+                graph.addVertex(edge[0]);
+            } else if (edge.length == 2) {
+                graph.addEdge(edge[0], edge[1]);
+            } else if (edge.length == 3) {
+                double weight = Double.parseDouble(edge[2].toString());
+                graph.addEdge(edge[0], edge[1], weight);
+            }
+        }
+        return graph;
+    }
+
+    /** 无向图 */
+    private static Graph<Object, Double> undirectedGraph(Object[][] data) {
+        Graph<Object, Double> graph = new ListGraph<>();
+        for (Object[] edge : data) {
+            if (edge.length == 1) {
+                graph.addVertex(edge[0]);
+            } else if (edge.length == 2) {
+                graph.addEdge(edge[0], edge[1]);
+                graph.addEdge(edge[1], edge[0]);
+            } else if (edge.length == 3) {
+                double weight = Double.parseDouble(edge[2].toString());
+                graph.addEdge(edge[0], edge[1], weight);
+                graph.addEdge(edge[1], edge[0], weight);
+            }
+        }
+        return graph;
     }
 }
