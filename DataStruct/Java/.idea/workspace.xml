@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9fa99ac7-235b-4bd3-8075-280cf9c51232" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/nius/graph/Data.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/nius/graph/resources/BFS_01.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/nius/graph/resources/BFS_02.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/nius/graph/resources/BFS_03.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/nius/graph/resources/BFS_04.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/nius/graph/resources/DFS_01.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/nius/graph/resources/DFS_02.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/nius/graph/resources/DFS_02_undirected.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/nius/graph/MinHeap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/nius/graph/resources/MST_01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/nius/graph/resources/MST_02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/nius/graph/resources/TOPO.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Java/com/nius/graph/Graph.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/com/nius/graph/Graph.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Java/com/nius/graph/ListGraph.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/com/nius/graph/ListGraph.class" afterDir="false" />
@@ -43,12 +39,14 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com/nius/graph/resources" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/com/nius/graph/resources" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/com/nius/graph/resources" />
+      <recent name="$PROJECT_DIR$/src/com/nius/graph" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/com/nius/graph/resources" />
     </key>
   </component>
@@ -101,6 +99,7 @@
       <workItem from="1573736707254" duration="3250000" />
       <workItem from="1573794754004" duration="3506000" />
       <workItem from="1573814769032" duration="8966000" />
+      <workItem from="1574051263887" duration="7765000" />
     </task>
     <servers />
   </component>

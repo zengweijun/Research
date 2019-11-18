@@ -6,9 +6,17 @@ import java.util.*;
 import java.util.function.Consumer;
 
 /// 接近邻接表实现方式
-public class ListGraph<V, E> implements Graph<V, E> {
+public class ListGraph<V, E> extends Graph<V, E> {
     private Map<V, Vertex<V, E>> vertices = new HashMap<>();
     private Set<Edge<V, E>> edges = new HashSet<>();
+    private Comparator<Edge<V, E>> edgeComparator = (Edge<V, E> e1, Edge<V, E> e2)->{
+        return weightManager.compare(e1.weight, e2.weight);
+    };
+
+    public ListGraph() {}
+    public ListGraph(WeightManager<E> weightManager) {
+        this.weightManager = weightManager;
+    }
 
     private static class Vertex<V, E> {
         // 存储的值
@@ -52,6 +60,9 @@ public class ListGraph<V, E> implements Graph<V, E> {
         public Edge(Vertex<V, E> from, Vertex<V, E> to) {
             this.from = from;
             this.to = to;
+        }
+        EdgeInfo<V, E> info() {
+            return new EdgeInfo<>(from.value, to.value, weight);
         }
 
         @Override
@@ -293,5 +304,82 @@ public class ListGraph<V, E> implements Graph<V, E> {
                 break;
             }
         }
+    }
+
+    @Override
+    public List<V> topologicalSort() {
+        List<V> list = new ArrayList<>();
+
+        // topo排序只能针对有向无环图
+
+        // 这里使用卡恩算法，但是卡恩算法思路是不断将图中入度为0的节点删掉
+        // 这样会破坏图的结构，因此这里重新维护一个map，用来记录每个节点的入度
+        // 根据操作不断更新map，已达到相同的的效果，且不会破坏原图结构
+        Queue<Vertex<V, E>> queue = new LinkedList<>();
+        Map<Vertex<V, E>, Integer> inDegreeMap = new HashMap<>();
+
+        // 初始化（将入度为0的节点全部放入队列）
+        // 为入度非0的节点创建入度表inDegreeMap
+        vertices.forEach((V v, Vertex<V, E> vt)->{
+            int vtInDegree = vt.inEdges.size();
+            if (vtInDegree == 0) {
+                queue.offer(vt);
+            } else {
+                inDegreeMap.put(vt, vtInDegree);
+            }
+        });
+
+        while (!queue.isEmpty()) {
+            Vertex<V, E> vt = queue.poll();
+
+            // 结果放入list
+            list.add(vt.value);
+
+            for (Edge<V, E> e : vt.outEdges) {
+                Vertex<V, E> to = e.to;
+                int toInDegree = inDegreeMap.get(to) - 1;
+                if (toInDegree == 0) {
+                    queue.offer(to);
+                } else {
+                    inDegreeMap.put(to, toInDegree);
+                }
+            }
+        }
+        return list;
+    }
+
+    @Override
+    public Set<EdgeInfo<V, E>> mst() {
+        return prim();
+    }
+
+    private Set<EdgeInfo<V, E>> prim() {
+        // 横切算法，被切中的边中选择权值最小的边
+        // 1.在图G中任选一个点M1放入集合M，N为剩余所有点N的集合（G-M = N）
+        // 2.切割M和N，将被切割边中最小权值边找出E1（连接M、N），将最小权值边的终点N1放入M，最小权值边E1放入A
+        // 3.切割M和N，继续2，此步骤需要过滤掉之前已被选中A集合中的E1
+        Iterator<Vertex<V, E>> iterator = vertices.values().iterator();
+        if (!iterator.hasNext()) return null;
+
+        Set<EdgeInfo<V, E>> results = new HashSet<>();
+        Set<Vertex<V, E>> addedVertices = new HashSet<>();
+
+        Vertex<V, E> vt = iterator.next();
+        addedVertices.add(vt);
+        MinHeap<Edge<V, E>> heap = new MinHeap<>(vt.outEdges, edgeComparator);
+        // results.size() < vertices.size(): 最小生成树最多只会有vertices.size()-1条边
+        // 因此如果results.size() == vertices.size()-1时，无需再往下切割
+        while (!heap.isEmpty() && results.size() < vertices.size()) {
+            Edge<V, E> e = heap.remove(); // 找到权值最小的那条边
+
+            if (addedVertices.contains(e.to)) continue;
+            results.add(e.info());
+            addedVertices.add(e.to);
+            heap.addAll(e.to.outEdges);
+        }
+        return results;
+    }
+    private Set<EdgeInfo<V, E>> kruskal() {
+        return null;
     }
 }

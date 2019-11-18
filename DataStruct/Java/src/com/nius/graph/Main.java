@@ -1,13 +1,43 @@
 package com.nius.graph;
 
+import java.util.List;
+import java.util.Set;
+
 public class Main {
+    static Graph.WeightManager<Double> weightManager = new Graph.WeightManager<Double>() {
+        public int compare(Double w1, Double w2) {
+            return w1.compareTo(w2);
+        }
+        public Double add(Double w1, Double w2) {
+            return w1 + w2;
+        }
+        public Double zero() {
+            return 0.0;
+        }
+    };
+
     public static void main(String[] args) {
 //         testListGraph01();
 //        testListGraph02();
 //        testBfs();
-        testDfs();
+//        testDfs();
+//        testTopo();
+        testMst();
     }
 
+    static void testMst() {
+        Graph<Object, Double> graph = undirectedGraph(Data.MST_02);
+        Set<Graph.EdgeInfo<Object, Double>> infos = graph.mst();
+        for (Graph.EdgeInfo<Object, Double> info : infos) {
+            System.out.println(info);
+        }
+    }
+
+    static void testTopo() {
+        Graph<Object, Double> graph = directedGraph(Data.TOPO);
+        List<Object> list = graph.topologicalSort();
+        System.out.println(list);
+    }
 
     public static void testDfs() {
 //        Graph<Object, Double> graph = undirectedGraph(Data.DFS_01);
@@ -75,7 +105,7 @@ public class Main {
 
     /** 有向图 */
     private static Graph<Object, Double> directedGraph(Object[][] data) {
-        Graph<Object, Double> graph = new ListGraph<>();
+        Graph<Object, Double> graph = new ListGraph<>(weightManager);
         for (Object[] edge : data) {
             if (edge.length == 1) {
                 graph.addVertex(edge[0]);
@@ -91,7 +121,7 @@ public class Main {
 
     /** 无向图 */
     private static Graph<Object, Double> undirectedGraph(Object[][] data) {
-        Graph<Object, Double> graph = new ListGraph<>();
+        Graph<Object, Double> graph = new ListGraph<>(weightManager);
         for (Object[] edge : data) {
             if (edge.length == 1) {
                 graph.addVertex(edge[0]);
