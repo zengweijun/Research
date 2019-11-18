@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9fa99ac7-235b-4bd3-8075-280cf9c51232" name="Default Changelist" comment="" />
+    <list default="true" id="9fa99ac7-235b-4bd3-8075-280cf9c51232" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../DataStruct/Java/src/com/nius/sort/insert/InsertionSort3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../DataStruct/Java/src/com/nius/union_find/MainUnionFindTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../DataStruct/Java/src/com/nius/union_find/UnionFind/GenericUnionFind.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../DataStruct/Java/src/com/nius/union_find/UnionFind/UnionFind.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../DataStruct/Java/src/com/nius/union_find/UnionFind/UnionFind_QuickFind.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../DataStruct/Java/src/com/nius/union_find/UnionFind/UnionFind_QuickUnion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../DataStruct/Java/src/com/nius/union_find/UnionFind/UnionFind_QuickUnion_Rank.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../DataStruct/Java/src/com/nius/union_find/UnionFind/UnionFind_QuickUnion_Rank_PathCompression.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../DataStruct/Java/src/com/nius/union_find/UnionFind/UnionFind_QuickUnion_Rank_PathHalving.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../DataStruct/Java/src/com/nius/union_find/UnionFind/UnionFind_QuickUnion_Rank_PathSpliting.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../DataStruct/Java/src/com/nius/union_find/UnionFind/UnionFind_QuickUnion_Size.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DataStruct/Java/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../DataStruct/Java/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DataStruct/Java/src/com/nius/sort/InsertionSort1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../DataStruct/Java/src/com/nius/sort/insert/InsertionSort1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DataStruct/Java/src/com/nius/sort/InsertionSort2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../DataStruct/Java/src/com/nius/sort/insert/InsertionSort2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DataStruct/Java/src/com/nius/sort/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../DataStruct/Java/src/com/nius/sort/Main.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,6 +153,7 @@
       <workItem from="1571657479277" duration="8641000" />
       <workItem from="1573024157334" duration="8000" />
       <workItem from="1573703284827" duration="40000" />
+      <workItem from="1574068158021" duration="1035000" />
     </task>
     <servers />
   </component>

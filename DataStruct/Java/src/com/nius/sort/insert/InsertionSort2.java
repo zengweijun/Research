@@ -1,6 +1,8 @@
-package com.nius.sort;
+package com.nius.sort.insert;
 
-public class InsertionSort1<T extends Comparable<T>> extends Sort<T> {
+import com.nius.sort.Sort;
+
+public class InsertionSort2<T extends Comparable<T>> extends Sort<T> {
     @Override
     protected void sort() {
         // 从前往后排
@@ -24,12 +26,18 @@ public class InsertionSort1<T extends Comparable<T>> extends Sort<T> {
         // 1 3 4 5 8 9 10
 
         // 从第二个元素开始，往前检查
+        // 优化:减少交换次数
+        // 先记住需要插入的元素，在与前边序列逐个比较时，如果小则将元素往后依次挪动
         for (int i = 1; i < array.length; i++) {
+            T v = array[i]; // 提前保存值
+            int fitIndex = i; // 默认合适的位置
             for (int j = i; j > 0; j--) {
-                if (cmp(j, j-1) < 0) {
-                    swap(j, j-1);
-                }
+                int preIndex = j - 1;
+                if (cmp(v, array[preIndex]) >= 0) break;
+                array[j] = array[preIndex];
+                fitIndex = preIndex;
             }
+            array[fitIndex] = v;
         }
     }
 }
