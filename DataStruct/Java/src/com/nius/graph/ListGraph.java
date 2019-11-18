@@ -1,9 +1,8 @@
 package com.nius.graph;
 
-import com.sun.org.apache.xpath.internal.operations.Equals;
+import com.nius.union_find.UnionFind.GenericUnionFind;
 
 import java.util.*;
-import java.util.function.Consumer;
 
 /// 接近邻接表实现方式
 public class ListGraph<V, E> extends Graph<V, E> {
@@ -350,7 +349,8 @@ public class ListGraph<V, E> extends Graph<V, E> {
 
     @Override
     public Set<EdgeInfo<V, E>> mst() {
-        return prim();
+        return prim(); // 时间复杂度可能更低
+        // return kruskal();
     }
 
     private Set<EdgeInfo<V, E>> prim() {
@@ -369,7 +369,8 @@ public class ListGraph<V, E> extends Graph<V, E> {
         MinHeap<Edge<V, E>> heap = new MinHeap<>(vt.outEdges, edgeComparator);
         // results.size() < vertices.size(): 最小生成树最多只会有vertices.size()-1条边
         // 因此如果results.size() == vertices.size()-1时，无需再往下切割
-        while (!heap.isEmpty() && results.size() < vertices.size()) {
+        int edgeSize = vertices.size() - 1;
+        while (!heap.isEmpty() && results.size() < edgeSize) {
             Edge<V, E> e = heap.remove(); // 找到权值最小的那条边
 
             if (addedVertices.contains(e.to)) continue;
@@ -379,7 +380,36 @@ public class ListGraph<V, E> extends Graph<V, E> {
         }
         return results;
     }
+
+    // O(E*logE)
     private Set<EdgeInfo<V, E>> kruskal() {
-        return null;
+        // 按照边的权重（从小到大）加入到生成树中，直到生成树中含有n-1条边（n是顶点数）
+        // 若改边加入会形成环，则不加入（从第三条边开始可能会形成环）
+        int edgeSize = vertices.size() - 1;
+        if (edgeSize == -1) return null;
+
+        Set<EdgeInfo<V, E>> results = new HashSet<>();
+
+        // O(logE)
+        MinHeap<Edge<V, E>> heap = new MinHeap<>(edges, edgeComparator);
+
+        // 每个顶点单独成一个集合
+        // O(V)
+        GenericUnionFind<Vertex<V, E>> uf = new GenericUnionFind<>();
+        vertices.forEach((V v, Vertex<V, E> vt)->{
+            uf.makeSet(vt);
+        });
+
+        // O(E*logE)
+        while (!heap.isEmpty() && results.size() < edgeSize) {
+            Edge<V, E> e = heap.remove(); // O(logE)
+
+            // 边两头的顶点已经处于同一集合中就不能要，否则会造成环
+            if (uf.isSame(e.from, e.to)) continue;
+
+            results.add(e.info());
+            uf.union(e.from, e.to);
+        }
+        return results;
     }
 }

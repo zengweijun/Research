@@ -1,7 +1,7 @@
 package com.nius.union_find;
 
-import com.nius.tools.Asserts;
-import com.nius.tools.Times;
+import com.nius.sort.tools.Asserts;
+import com.nius.sort.tools.Times;
 import com.nius.union_find.UnionFind.*;
 
 public class MainUnionFindTest {
