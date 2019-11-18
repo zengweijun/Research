@@ -3,36 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9fa99ac7-235b-4bd3-8075-280cf9c51232" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../../Algorithm/Java/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithm/Java/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Algorithm/Java/src/com/nius/search/BinarySearch.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Algorithm/Java/src/com/nius/sort/MainSort.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Algorithm/Java/src/com/nius/sort/compare/HeapSort.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Algorithm/Java/src/com/nius/sort/compare/MergeSort.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Algorithm/Java/src/com/nius/sort/compare/QuickSort.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Algorithm/Java/src/com/nius/sort/compare/SelectionSort.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Algorithm/Java/src/com/nius/sort/compare/Sort.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Algorithm/Java/src/com/nius/sort/compare/bubble/BubbleSort1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Algorithm/Java/src/com/nius/sort/compare/bubble/BubbleSort2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Algorithm/Java/src/com/nius/sort/compare/bubble/BubbleSort3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Algorithm/Java/src/com/nius/sort/compare/insert/InsertionSort1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Algorithm/Java/src/com/nius/sort/compare/insert/InsertionSort2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Algorithm/Java/src/com/nius/sort/compare/insert/InsertionSort3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/sort/insert/InsertionSort3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Algorithm/Java/src/com/nius/tools/Asserts.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Algorithm/Java/src/com/nius/tools/Integers.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Algorithm/Java/src/com/nius/tools/Times.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Algorithm/Java/src/com/nius/union_find/MainUnionFindTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/union_find/MainUnionFindTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Algorithm/Java/src/com/nius/union_find/UnionFind/GenericUnionFind.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/union_find/UnionFind/GenericUnionFind.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Algorithm/Java/src/com/nius/union_find/UnionFind/UnionFind.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/union_find/UnionFind/UnionFind.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Algorithm/Java/src/com/nius/union_find/UnionFind/UnionFind_QuickFind.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/union_find/UnionFind/UnionFind_QuickFind.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Algorithm/Java/src/com/nius/union_find/UnionFind/UnionFind_QuickUnion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/union_find/UnionFind/UnionFind_QuickUnion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Algorithm/Java/src/com/nius/union_find/UnionFind/UnionFind_QuickUnion_Rank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/union_find/UnionFind/UnionFind_QuickUnion_Rank.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Algorithm/Java/src/com/nius/union_find/UnionFind/UnionFind_QuickUnion_Rank_PathCompression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/union_find/UnionFind/UnionFind_QuickUnion_Rank_PathCompression.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Algorithm/Java/src/com/nius/union_find/UnionFind/UnionFind_QuickUnion_Rank_PathHalving.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/union_find/UnionFind/UnionFind_QuickUnion_Rank_PathHalving.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Algorithm/Java/src/com/nius/union_find/UnionFind/UnionFind_QuickUnion_Rank_PathSpliting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/union_find/UnionFind/UnionFind_QuickUnion_Rank_PathSpliting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Algorithm/Java/src/com/nius/union_find/UnionFind/UnionFind_QuickUnion_Size.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/union_find/UnionFind/UnionFind_QuickUnion_Size.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nius/sort/InsertionSort1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/sort/insert/InsertionSort1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nius/sort/InsertionSort2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/sort/insert/InsertionSort2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nius/sort/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/sort/Main.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -126,6 +96,7 @@
       <workItem from="1573814769032" duration="8966000" />
       <workItem from="1574051263887" duration="7765000" />
       <workItem from="1574068206770" duration="1009000" />
+      <workItem from="1574069352033" duration="5000" />
     </task>
     <servers />
   </component>

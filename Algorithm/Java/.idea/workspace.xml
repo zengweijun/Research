@@ -2,22 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9fa99ac7-235b-4bd3-8075-280cf9c51232" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../DataStruct/Java/src/com/nius/sort/insert/InsertionSort3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DataStruct/Java/src/com/nius/union_find/MainUnionFindTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DataStruct/Java/src/com/nius/union_find/UnionFind/GenericUnionFind.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DataStruct/Java/src/com/nius/union_find/UnionFind/UnionFind.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DataStruct/Java/src/com/nius/union_find/UnionFind/UnionFind_QuickFind.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DataStruct/Java/src/com/nius/union_find/UnionFind/UnionFind_QuickUnion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DataStruct/Java/src/com/nius/union_find/UnionFind/UnionFind_QuickUnion_Rank.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DataStruct/Java/src/com/nius/union_find/UnionFind/UnionFind_QuickUnion_Rank_PathCompression.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DataStruct/Java/src/com/nius/union_find/UnionFind/UnionFind_QuickUnion_Rank_PathHalving.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DataStruct/Java/src/com/nius/union_find/UnionFind/UnionFind_QuickUnion_Rank_PathSpliting.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DataStruct/Java/src/com/nius/union_find/UnionFind/UnionFind_QuickUnion_Size.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/nius/_210_课程表II.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../DataStruct/Java/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../DataStruct/Java/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DataStruct/Java/src/com/nius/sort/InsertionSort1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../DataStruct/Java/src/com/nius/sort/insert/InsertionSort1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DataStruct/Java/src/com/nius/sort/InsertionSort2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../DataStruct/Java/src/com/nius/sort/insert/InsertionSort2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DataStruct/Java/src/com/nius/sort/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../DataStruct/Java/src/com/nius/sort/Main.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -68,7 +55,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.BinarySearch">
+  <component name="RunManager" selected="Application._210_课程表II">
     <configuration name="BinarySearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.nius.search.BinarySearch" />
       <module name="Java" />
@@ -121,12 +108,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="_210_课程表II" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.nius._210_课程表II" />
+      <module name="Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nius.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application._210_课程表II" />
+        <item itemvalue="Application.BinarySearch" />
         <item itemvalue="Application.MainUnionFindTest" />
         <item itemvalue="Application.MainSort" />
         <item itemvalue="Application.InsertionSort3" />
-        <item itemvalue="Application.BinarySearch" />
       </list>
     </recent_temporary>
   </component>
@@ -153,7 +154,8 @@
       <workItem from="1571657479277" duration="8641000" />
       <workItem from="1573024157334" duration="8000" />
       <workItem from="1573703284827" duration="40000" />
-      <workItem from="1574068158021" duration="1035000" />
+      <workItem from="1574068158021" duration="1091000" />
+      <workItem from="1574069360753" duration="4107000" />
     </task>
     <servers />
   </component>
