@@ -1,6 +1,8 @@
 package com.nius.graph;
 
+import java.util.LinkedList;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 public abstract class Graph<V, E> {
@@ -46,6 +48,35 @@ public abstract class Graph<V, E> {
     // 最小生成树（支撑树）：最小联通子图，即n个点有n-1条边，且这n-1条边的总权值在所有情况中最小
     // 注意：对于任意一个顶点出去的边的权值唯一的时候，最小生成树唯一，否则最小生成树可能不唯一
     public abstract Set<EdgeInfo<V, E>> mst();
+
+    // 最短路劲
+    public abstract Map<V, PathInfo<V, E>> shortestPath(V begin);
+
+    public static class PathInfo<V, E> {
+        // 这个是Graph的内部类，protected属性时Graph的子类可以访问
+        protected E weight;
+        protected List<EdgeInfo<V, E>> edgeInfos = new LinkedList<>();
+        public PathInfo() {}
+        public PathInfo(E weight) {
+            this.weight = weight;
+        }
+        public E getWeight() {
+            return weight;
+        }
+        public void setWeight(E weight) {
+            this.weight = weight;
+        }
+        public List<EdgeInfo<V, E>> getEdgeInfos() {
+            return edgeInfos;
+        }
+        public void setEdgeInfos(List<EdgeInfo<V, E>> edgeInfos) {
+            this.edgeInfos = edgeInfos;
+        }
+        @Override
+        public String toString() {
+            return "PathInfo [weight=" + weight + ", edgeInfos=" + edgeInfos + "]";
+        }
+    }
 
     public interface WeightManager<E> {
         int compare(E w1, E w2);

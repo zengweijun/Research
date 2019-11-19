@@ -2,10 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9fa99ac7-235b-4bd3-8075-280cf9c51232" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/nius/graph/resources/SP.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/com/nius/graph/Graph$EdgeInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/com/nius/graph/Graph$EdgeInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/com/nius/graph/Graph.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/com/nius/graph/Graph.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/com/nius/graph/ListGraph$Edge.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/com/nius/graph/ListGraph$Edge.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/com/nius/graph/ListGraph$Vertex.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/com/nius/graph/ListGraph$Vertex.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/com/nius/graph/ListGraph.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/com/nius/graph/ListGraph.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/com/nius/graph/Main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/com/nius/graph/Main$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/com/nius/graph/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/com/nius/graph/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/graph/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/graph/Graph.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/nius/graph/ListGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/graph/ListGraph.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/nius/graph/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/graph/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nius/union_find/MainUnionFindTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/union_find/MainUnionFindTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,18 +42,18 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com/nius/sort/insert" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com/nius/graph/resources" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/com/nius/graph/resources" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/com/nius/graph/resources" />
       <recent name="$PROJECT_DIR$/src/com/nius/sort/insert" />
       <recent name="$PROJECT_DIR$/src/com/nius" />
-      <recent name="$PROJECT_DIR$/src/com/nius/graph/resources" />
       <recent name="$PROJECT_DIR$/src/com/nius/graph" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/com/nius/graph/resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -101,6 +109,7 @@
       <workItem from="1574068206770" duration="1009000" />
       <workItem from="1574069352033" duration="5000" />
       <workItem from="1574077845750" duration="2017000" />
+      <workItem from="1574149312214" duration="3151000" />
     </task>
     <servers />
   </component>

@@ -1,6 +1,7 @@
 package com.nius.graph;
 
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 public class Main {
@@ -22,7 +23,17 @@ public class Main {
 //        testBfs();
 //        testDfs();
 //        testTopo();
-        testMst();
+//        testMst();
+        testSP_Dijkstra();
+    }
+
+    static void testSP_Dijkstra() {
+        Graph<Object, Double> graph = directedGraph(Data.SP);
+        Map<Object, Graph.PathInfo<Object, Double>> sp = graph.shortestPath("A");
+        if (sp == null) return;
+        sp.forEach((Object v, Graph.PathInfo<Object, Double> path) -> {
+            System.out.println(v + " - " + path);
+        });
     }
 
     static void testMst() {
