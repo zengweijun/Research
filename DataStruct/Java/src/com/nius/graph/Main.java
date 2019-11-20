@@ -24,14 +24,31 @@ public class Main {
 //        testDfs();
 //        testTopo();
 //        testMst();
-        testSP_Dijkstra();
+        testSP();
     }
 
-    static void testSP_Dijkstra() {
+    static void testSP() {
+        System.out.println("正常松弛");
         Graph<Object, Double> graph = directedGraph(Data.SP);
         Map<Object, Graph.PathInfo<Object, Double>> sp = graph.shortestPath("A");
         if (sp == null) return;
         sp.forEach((Object v, Graph.PathInfo<Object, Double> path) -> {
+            System.out.println(v + " - " + path);
+        });
+
+        System.out.println("\n存在负权边");
+        Graph<Object, Double> graph1 = directedGraph(Data.NEGATIVE_WEIGHT1);
+        Map<Object, Graph.PathInfo<Object, Double>> sp1 = graph1.shortestPath("A");
+        if (sp1 == null) return;
+        sp1.forEach((Object v, Graph.PathInfo<Object, Double> path) -> {
+            System.out.println(v + " - " + path);
+        });
+
+        System.out.println("\n存在负权环");
+        Graph<Object, Double> graph2 = directedGraph(Data.NEGATIVE_WEIGHT2);
+        Map<Object, Graph.PathInfo<Object, Double>> sp2 = graph2.shortestPath("A");
+        if (sp2 == null) return;
+        sp2.forEach((Object v, Graph.PathInfo<Object, Double> path) -> {
             System.out.println(v + " - " + path);
         });
     }

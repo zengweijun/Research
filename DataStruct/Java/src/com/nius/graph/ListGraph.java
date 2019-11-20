@@ -416,10 +416,88 @@ public class ListGraph<V, E> extends Graph<V, E> {
 
     @Override
     public Map<V, PathInfo<V, E>> shortestPath(V begin) {
-        return dijkstra(begin);
+//         return dijkstra(begin); // 不能有负权边(优化后效率更高)
+        return bellmanFord(begin); // 可以有负权边（能检查出负权环）
+    }
+
+    // 贝尔曼-福特 算法 O(EV),E是边数，V是顶点数
+    // 该算法不仅支持负权边，还可以检查出图中是否有负权环
+    // 原理：对所有边进行V-1次松弛操作（V是节点数），得到所有可能的最短路径
+    // 最好情况：第一轮就确定了所有点的最短路径，这样只需要1轮即可完成
+    // 最坏情况：每一轮只能确定一个点的最短路劲，这样需要达到V-1轮才能完成
+    private Map<V, PathInfo<V, E>> bellmanFord(V begin) {
+        Vertex<V, E> beginVt = vertices.get(begin);
+        if (beginVt == null) return null;
+
+        // 记录起点到每个点的最短路径
+        Map<V, PathInfo<V, E>>selectedPaths = new HashMap<>();
+        // 初始状态，假设起点到起点的最短路径为0
+        selectedPaths.put(beginVt.value, new PathInfo<>(weightManager.zero()));
+
+        int count = vertices.size() - 1; // 松弛次数
+        for (int i = 0; i < count; i++) {
+            // 并不是一定需要V-1轮才能完成，有可能会提前结束
+            // 如果某次所有边都未发送松弛操作，则说明松弛操作提前结束
+            boolean isRelaxFinished = true;
+            // 对每一条边都松弛V-1次
+            for (Edge<V, E> edge : edges) {
+                // 要松弛这条边先检查它起点的最短路径是否已经算出
+                // 如果edge.from的最短路径没有，此条边松弛失败
+                PathInfo<V, E> fromPathInfo = selectedPaths.get(edge.from.value);
+                if (fromPathInfo == null) continue;
+                if (relaxForBellmanFord(edge, fromPathInfo, selectedPaths)) {
+                    isRelaxFinished = false;
+                }
+            }
+            if (isRelaxFinished) {
+                break;
+            }
+        }
+
+        // 检查是否存在负权环
+        // 思路：负权环的存在会导致每次松弛都会让最短路径发生改变，因此如果有负权环存在
+        //      在经过V-1一轮循环后仍然会发生松弛操作
+        // 这里再来一次，如果仍然存在松弛操作，则说明有负权环存在
+        for (Edge<V, E> edge : edges) {
+            PathInfo<V, E> fromPathInfo = selectedPaths.get(edge.from.value);
+            if (fromPathInfo == null) continue;
+            if (relaxForBellmanFord(edge, fromPathInfo, selectedPaths)) {
+                System.out.println("求最短路径失败，存在负权环！");
+                return null;
+            }
+        }
+
+        selectedPaths.remove(begin);
+        return selectedPaths;
+    }
+
+    private boolean relaxForBellmanFord(Edge<V, E> edge,
+                                  PathInfo<V, E> fromPath,
+                                  Map<V, PathInfo<V, E>> paths) {
+        // 新的可以选择的最短路劲：beginVertex到edge.from的最短路径 + edge.weight
+        E newWeight = weightManager.add(fromPath.weight, edge.weight);
+        // 以前的最短路径：beginVertex到edge.to的最短路径
+        PathInfo<V, E> oldPathInfo = paths.get(edge.to.value);
+
+        // 如果以前的最短路径存在且更小，无需松弛
+        if (oldPathInfo != null && weightManager.compare(oldPathInfo.weight, newWeight) <= 0) return false;
+
+        if (oldPathInfo == null) {
+            oldPathInfo = new PathInfo<>();
+            paths.put(edge.to.value, oldPathInfo);
+        } else {
+            // 清掉以前的路径信息
+            oldPathInfo.edgeInfos.clear();
+        }
+
+        oldPathInfo.weight = newWeight;
+        oldPathInfo.edgeInfos.addAll(fromPath.edgeInfos);
+        oldPathInfo.edgeInfos.add(edge.info());
+        return true;
     }
 
     // 注意：迪杰斯特拉 算法不能有负权边
+    // 迪杰斯特拉 算法可以优化至 O(E * LogV)，使用堆来求最短路径，可减少时间复杂度
     // 该算法可以理解为绳子相连的石头网，从桌面提前一个石头，其它石头被依次拉起的过程
     private Map<V, PathInfo<V, E>> dijkstra(V begin) {
         Vertex<V, E> beginVt = vertices.get(begin);
@@ -479,6 +557,7 @@ public class ListGraph<V, E> extends Graph<V, E> {
         oldPathInfo.edgeInfos.add(edge.info());
     }
 
+    // 这里可以使用MinHeap堆优化，以优化至O(E * logV)级别，目前实现方式并未达到
     private Entry<Vertex<V, E>, PathInfo<V, E>> getMinPath(Map<Vertex<V, E>, PathInfo<V, E>> paths) {
         Iterator<Entry<Vertex<V, E>, PathInfo<V, E>>> it = paths.entrySet().iterator();
         Entry<Vertex<V, E>, PathInfo<V, E>> minEntry = it.next();

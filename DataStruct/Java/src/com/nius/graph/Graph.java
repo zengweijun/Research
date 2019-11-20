@@ -49,7 +49,7 @@ public abstract class Graph<V, E> {
     // 注意：对于任意一个顶点出去的边的权值唯一的时候，最小生成树唯一，否则最小生成树可能不唯一
     public abstract Set<EdgeInfo<V, E>> mst();
 
-    // 最短路劲
+    // 最短路劲（有负权环的图没有最短路劲）
     public abstract Map<V, PathInfo<V, E>> shortestPath(V begin);
 
     public static class PathInfo<V, E> {
