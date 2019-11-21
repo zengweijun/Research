@@ -42,4 +42,27 @@ public class _206_反转链表 {
         cur = tmpNext;
         return reverse(prev, cur);
     }
+
+
+    // MJ版本
+    public ListNode reverseList3(ListNode head) {
+        if (head == null || head.next == null) return head;
+
+        ListNode newHead = reverseList3(head.next);
+        head.next.next = head;
+        head.next = null;
+        return newHead;
+    }
+
+    public ListNode reverseList4(ListNode head) {
+        if (head == null || head.next == null) return head;
+        ListNode newHead = null;
+        while (head != null) {
+            ListNode tmp = head.next;
+            head.next = newHead;
+            newHead = head;
+            head = tmp;
+        }
+        return newHead;
+    }
 }
