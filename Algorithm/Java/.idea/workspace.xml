@@ -2,9 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9fa99ac7-235b-4bd3-8075-280cf9c51232" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/nius/_210_课程表II.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/nius/BinaryTree/TreeNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/nius/BinaryTree/_226_翻转二叉树.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/nius/BinaryTree/file/Files.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/nius/BinaryTree/printer/BinaryTreeInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/nius/BinaryTree/printer/BinaryTrees.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/nius/BinaryTree/printer/InorderPrinter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/nius/BinaryTree/printer/LevelOrderPrinter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/nius/BinaryTree/printer/Printer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/nius/BinaryTree/printer/Strings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/nius/BinaryTree/tree/AVLTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/nius/BinaryTree/tree/BBST.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/nius/BinaryTree/tree/BST.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/nius/BinaryTree/tree/BinaryTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/nius/BinaryTree/tree/RBTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/nius/LinkedList/ListNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/nius/LinkedList/_206_反转链表.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DataStruct/Java/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../DataStruct/Java/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/com/nius/_210_课程表II.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/_210_课程表II.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/Graph/_210_课程表II.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,6 +38,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
+  <component name="HierarchyBrowserManager">
+    <option name="SORT_ALPHABETICALLY" value="true" />
+    <option name="SCOPE" value="All" />
+  </component>
   <component name="ProjectId" id="1RvPdRPGu3YNRhbl97WhqCBXuem" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -29,7 +49,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com/nius/BinaryTree" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Language Defaults" />
   </component>
   <component name="RecentsManager">
@@ -41,6 +61,9 @@
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.nius.union_find" />
       <recent name="com.nius.sort" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/com/nius/BinaryTree" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -55,39 +78,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application._210_课程表II">
+  <component name="RunManager" selected="Application._226_翻转二叉树">
     <configuration name="BinarySearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.nius.search.BinarySearch" />
       <module name="Java" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.nius.search.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="InsertionSort3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.nius.sort.compare.insert.InsertionSort3" />
-      <module name="Java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.nius.sort.compare.insert.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MainSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.nius.sort.MainSort" />
-      <module name="Java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.nius.sort.compare.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -108,12 +105,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="_210_课程表II" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.nius._210_课程表II" />
+    <configuration name="_206_反转链表" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.nius.LinkedList._206_反转链表" />
       <module name="Java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.nius.*" />
+          <option name="PATTERN" value="com.nius.Graph.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_210_课程表II" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.nius.Graph._210_课程表II" />
+      <module name="Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nius.Graph.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_226_翻转二叉树" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.nius.BinaryTree._226_翻转二叉树" />
+      <module name="Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nius.BinaryTree.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -123,13 +146,16 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application._226_翻转二叉树" />
+        <item itemvalue="Application._206_反转链表" />
         <item itemvalue="Application._210_课程表II" />
         <item itemvalue="Application.BinarySearch" />
         <item itemvalue="Application.MainUnionFindTest" />
-        <item itemvalue="Application.MainSort" />
-        <item itemvalue="Application.InsertionSort3" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="StructureViewFactory">
+    <option name="ACTIVE_ACTIONS" value=",VISIBILITY_SORTER" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -156,6 +182,8 @@
       <workItem from="1573703284827" duration="40000" />
       <workItem from="1574068158021" duration="1091000" />
       <workItem from="1574069360753" duration="4107000" />
+      <workItem from="1574308068464" duration="4743000" />
+      <workItem from="1574317585836" duration="1989000" />
     </task>
     <servers />
   </component>

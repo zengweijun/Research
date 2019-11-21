@@ -1,4 +1,4 @@
-package com.nius;
+package com.nius.Graph;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
