@@ -2,6 +2,7 @@ package com.nius.dynamicProgramming;
 
 public class _找零钱 {
 
+
     public static void main(String[] args) {
         int n = 41; // 需要找的零钱总值（元）
         int[] faces = {1, 5, 20, 25}; // 可以找的硬币面值（元）
@@ -19,14 +20,10 @@ public class _找零钱 {
         // 3.状态转移方程(以上4种情况中最小的一种即是最优解)
         // dp(n) = min {dp(n-1), dp(n-5), dp(n-20), dp(n-25)}
 
-        int minCoins1 = minCoins1(n);
-        int minCoins2 = minCoins2(n);
-        int minCoins3 = minCoins3(n);
-        int minCoins4 = minCoins4(n, faces);
-        System.out.println("minCoins1: " + minCoins1);
-        System.out.println("minCoins2: " + minCoins2);
-        System.out.println("minCoins3: " + minCoins3);
-        System.out.println("minCoins4: " + minCoins4);
+        System.out.println("minCoins1: " + minCoins1(n));
+        System.out.println("minCoins2: " + minCoins2(n));
+        System.out.println("minCoins3: " + minCoins3(n));
+        System.out.println("minCoins4: " + minCoins4(n, faces));
     }
 
 
@@ -73,10 +70,45 @@ public class _找零钱 {
     static int minCoins3 (int n) {
         if (n < 1) return -1;
         int[] dp = new int[n+1];
-        for (int i = 2; i <= n; i++) {
+        int[] endFaces = new int[dp.length]; // 凑齐i元最后选择的一枚硬币面值
+        for (int i = 1; i <= n; i++) {
+            int minCount = Integer.MAX_VALUE;
+            if (i >= 1) {
+                int v = dp[i-1];
+                if (v >= 0 && v < minCount) {
+                    minCount = v;
+                    endFaces[i] = 1;
+                }
+            }
+            if (i >= 5) {
+                int v = dp[i-5];
+                if (v >= 0 && v < minCount) {
+                    minCount = v;
+                    endFaces[i] = 5;
+                }
+            }
+            if (i >= 20) {
+                int v = dp[i-20];
+                if (v >= 0 && v < minCount) {
+                    minCount = v;
+                    endFaces[i] = 20;
+                }
+            }
+            if (i >= 25) {
+                int v = dp[i-25];
+                if (v >= 0 && v < minCount) {
+                    minCount = v;
+                    endFaces[i] = 25;
+                }
+            }
 
-
+            if (minCount == Integer.MAX_VALUE) {
+                dp[i] = -1;
+            } else {
+                dp[i] = minCount + 1;
+            }
         }
+        showCoins(n, endFaces);
         return dp[n];
     }
 
@@ -87,18 +119,35 @@ public class _找零钱 {
         for (int i = 1; i <= m; i++) {
             int minCount = Integer.MAX_VALUE;
             if (i >= 1) {
-                minCount = Math.min(minCount, dp[i-1]);
+                int v = dp[i-1];
+                if (v >= 0 && v < minCount) {
+                    minCount = v;
+                }
             }
             if (i >= 5) {
-                minCount = Math.min(minCount, dp[i-5]);
+                int v = dp[i-5];
+                if (v >= 0 && v < minCount) {
+                    minCount = v;
+                }
             }
             if (i >= 20) {
-                minCount = Math.min(minCount, dp[i-20]);
+                int v = dp[i-20];
+                if (v >= 0 && v < minCount) {
+                    minCount = v;
+                }
             }
             if (i >= 25) {
-                minCount = Math.min(minCount, dp[i-25]);
+                int v = dp[i-25];
+                if (v >= 0 && v < minCount) {
+                    minCount = v;
+                }
             }
-            dp[i] = minCount + 1;
+
+            if (minCount == Integer.MAX_VALUE) {
+                dp[i] = -1;
+            } else {
+                dp[i] = minCount + 1;
+            }
         }
         return dp[m];
     }
@@ -114,5 +163,14 @@ public class _找零钱 {
         int minCount1 = Math.min(cs1, cs2);
         int minCount2 = Math.min(cs3, cs4);
         return Math.min(minCount1, minCount2) + 1;
+    }
+
+    static private void showCoins(int n, int[] endFaces) {
+        System.out.print("[" + "凑齐" + n + "] = " );
+        while (n > 0) {
+            System.out.print(endFaces[n] + " ");
+            n = n - endFaces[n];
+        }
+        System.out.println();
     }
 }
