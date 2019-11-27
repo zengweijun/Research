@@ -1,8 +1,5 @@
 package com.nius.sort;
 
-import com.sun.tools.internal.xjc.reader.xmlschema.bindinfo.BIConversion;
-
-import java.sql.Statement;
 import java.text.DecimalFormat;
 
 public abstract class Sort<T extends Comparable<T>> implements Comparable<Sort<T>> {
@@ -68,6 +65,8 @@ public abstract class Sort<T extends Comparable<T>> implements Comparable<Sort<T
     }
 
     boolean isStable() {
+        if (this instanceof SelectionSort) return false;
+
         TestStableObj[] objs = new TestStableObj[20];
         for (int i = 0; i < objs.length; i++) {
             objs[i] = new TestStableObj(10, i*10);

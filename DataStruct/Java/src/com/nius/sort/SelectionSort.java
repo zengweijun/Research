@@ -15,10 +15,10 @@ public class SelectionSort<T extends Comparable<T>> extends Sort<T> {
 
             // 注意，这里的end是最后一个元素，这里必须要要用<=才能取到
             for (int begin = 1; begin <= end; begin++) {
-                // 如果有两个最大值 5，5，发生交换的应该是后边一个5
-                // 这样才能保证该算法的"稳定性"，因此如果相等，默认取最后一个为最大值
-                // 否则可能出现将前一个最大值交换到尾部，因此这里使用<=
-                if (cmp(maxIndex, begin) <= 0) {
+                // 经过特例测试，某些情况下这里不能保证"稳定性"
+                // 这里使用 <= 只能提高稳定性，既然不能保证稳定性，直接使用 <
+                // 以减少if内部执行次数
+                if (cmp(maxIndex, begin) < 0) {
                     maxIndex = begin;
                 }
             }

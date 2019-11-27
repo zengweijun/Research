@@ -2,14 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9fa99ac7-235b-4bd3-8075-280cf9c51232" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/nius/graph/resources/NEGATIVE_WEIGHT1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/nius/graph/resources/NEGATIVE_WEIGHT2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Algorithm/Java/src/com/nius/dynamicProgramming/_找零钱1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/nius/recursion/ClimbStairs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/nius/recursion/Fib.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/nius/recursion/Hanoi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/nius/recursion/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithm/Java/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithm/Java/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithm/Java/out/production/Java/com/nius/BinaryTree/_226_翻转二叉树.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithm/Java/out/production/Java/com/nius/BinaryTree/_226_翻转二叉树.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithm/Java/out/production/Java/com/nius/BinaryTree/tree/BinaryTree$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithm/Java/out/production/Java/com/nius/BinaryTree/tree/BinaryTree$Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithm/Java/out/production/Java/com/nius/BinaryTree/tree/BinaryTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithm/Java/out/production/Java/com/nius/BinaryTree/tree/BinaryTree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithm/Java/out/production/Java/com/nius/LinkedList/_206_反转链表.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithm/Java/out/production/Java/com/nius/LinkedList/_206_反转链表.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/com/nius/graph/ListGraph.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/com/nius/graph/ListGraph.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/com/nius/graph/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/com/nius/graph/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nius/graph/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/graph/Graph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nius/graph/ListGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/graph/ListGraph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nius/graph/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/graph/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/META-INF/Java.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/com/nius/sort/SelectionSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/com/nius/sort/SelectionSort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/com/nius/sort/Sort$TestStableObj.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/com/nius/sort/Sort$TestStableObj.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/com/nius/sort/Sort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/com/nius/sort/Sort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/sort/SelectionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/sort/SelectionSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/sort/Sort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/sort/Sort.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -78,7 +87,59 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Hanoi">
+    <configuration name="ClimbStairs" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.nius.recursion.ClimbStairs" />
+      <module name="Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nius.recursion.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Fib" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.nius.recursion.Fib" />
+      <module name="Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nius.recursion.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Hanoi" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.nius.recursion.Hanoi" />
+      <module name="Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nius.recursion.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.nius.recursion.Main" />
+      <module name="Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nius.recursion.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.nius.graph.Main" />
       <module name="Java" />
@@ -94,6 +155,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Hanoi" />
+        <item itemvalue="Application.ClimbStairs" />
+        <item itemvalue="Application.Fib" />
+        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -121,6 +186,8 @@
       <workItem from="1574077845750" duration="2017000" />
       <workItem from="1574149312214" duration="3151000" />
       <workItem from="1574225021643" duration="3709000" />
+      <workItem from="1574648585761" duration="11242000" />
+      <workItem from="1574825330855" duration="40000" />
     </task>
     <servers />
   </component>

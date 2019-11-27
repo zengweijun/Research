@@ -2,7 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9fa99ac7-235b-4bd3-8075-280cf9c51232" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/com/nius/LinkedList/_206_反转链表.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/LinkedList/_206_反转链表.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/nius/dynamicProgramming/_找零钱.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../DataStruct/Java/src/com/nius/recursion/ClimbStairs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../DataStruct/Java/src/com/nius/recursion/Fib.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../DataStruct/Java/src/com/nius/recursion/Hanoi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../DataStruct/Java/src/com/nius/recursion/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/com/nius/BinaryTree/_226_翻转二叉树.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/com/nius/BinaryTree/_226_翻转二叉树.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/com/nius/BinaryTree/tree/BinaryTree$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/com/nius/BinaryTree/tree/BinaryTree$Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/com/nius/BinaryTree/tree/BinaryTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/com/nius/BinaryTree/tree/BinaryTree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/com/nius/LinkedList/_206_反转链表.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/com/nius/LinkedList/_206_反转链表.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DataStruct/Java/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../DataStruct/Java/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DataStruct/Java/out/production/Java/META-INF/Java.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DataStruct/Java/out/production/Java/com/nius/sort/SelectionSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../DataStruct/Java/out/production/Java/com/nius/sort/SelectionSort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DataStruct/Java/out/production/Java/com/nius/sort/Sort$TestStableObj.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../DataStruct/Java/out/production/Java/com/nius/sort/Sort$TestStableObj.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DataStruct/Java/out/production/Java/com/nius/sort/Sort.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../DataStruct/Java/out/production/Java/com/nius/sort/Sort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DataStruct/Java/src/com/nius/sort/SelectionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../DataStruct/Java/src/com/nius/sort/SelectionSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DataStruct/Java/src/com/nius/sort/Sort.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../DataStruct/Java/src/com/nius/sort/Sort.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,6 +29,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Kotlin Class" />
         <option value="Class" />
       </list>
     </option>
@@ -32,6 +49,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com/nius/BinaryTree" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Language Defaults" />
   </component>
   <component name="RecentsManager">
@@ -60,13 +78,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application._226_翻转二叉树">
-    <configuration name="BinarySearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.nius.search.BinarySearch" />
+  <component name="RunManager" selected="Application._找零钱">
+    <configuration name="_找零钱" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.nius.dynamicProgramming._找零钱" />
       <module name="Java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.nius.search.*" />
+          <option name="PATTERN" value="com.nius.dynamicProgramming.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -74,12 +92,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainUnionFindTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.nius.union_find.MainUnionFindTest" />
+    <configuration name="_找零钱1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.nius.dynamicProgramming._找零钱1" />
       <module name="Java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.nius.union_find.UnionFind.*" />
+          <option name="PATTERN" value="com.nius.dynamicProgramming.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -128,11 +146,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application._找零钱" />
+        <item itemvalue="Application._找零钱1" />
         <item itemvalue="Application._226_翻转二叉树" />
         <item itemvalue="Application._206_反转链表" />
         <item itemvalue="Application._210_课程表II" />
-        <item itemvalue="Application.BinarySearch" />
-        <item itemvalue="Application.MainUnionFindTest" />
       </list>
     </recent_temporary>
   </component>
@@ -167,6 +185,7 @@
       <workItem from="1574308068464" duration="4743000" />
       <workItem from="1574317585836" duration="1989000" />
       <workItem from="1574332132794" duration="142000" />
+      <workItem from="1574759943477" duration="8784000" />
     </task>
     <servers />
   </component>
