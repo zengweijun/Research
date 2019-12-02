@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9fa99ac7-235b-4bd3-8075-280cf9c51232" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/nius/dynamicProgramming/_最大连续子序列之和.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/nius/dynamicProgramming/_最长上升子序列.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/nius/dynamicProgramming/_最长公共子序列.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/com/nius/dynamicProgramming/_找零钱.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/com/nius/dynamicProgramming/_找零钱.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nius/dynamicProgramming/_找零钱.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/dynamicProgramming/_找零钱.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nius/dynamicProgramming/_最长公共子序列.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/dynamicProgramming/_最长公共子序列.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -67,7 +63,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application._最长上升子序列">
+  <component name="RunManager" selected="Application._226_翻转二叉树">
     <configuration name="_找零钱" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.nius.dynamicProgramming._找零钱" />
       <module name="Java" />
@@ -94,12 +90,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="_最大连续子序列之和" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.nius.dynamicProgramming._最大连续子序列之和" />
+    <configuration name="_226_翻转二叉树" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.nius.BinaryTree._226_翻转二叉树" />
       <module name="Java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.nius.dynamicProgramming.*" />
+          <option name="PATTERN" value="com.nius.BinaryTree.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -107,12 +103,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="_226_翻转二叉树" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.nius.BinaryTree._226_翻转二叉树" />
+    <configuration name="_最大连续子序列之和" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.nius.dynamicProgramming._最大连续子序列之和" />
       <module name="Java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.nius.BinaryTree.*" />
+          <option name="PATTERN" value="com.nius.dynamicProgramming.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -135,8 +131,6 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application._最长上升子序列" />
-        <item itemvalue="Application._最大连续子序列之和" />
         <item itemvalue="Application._找零钱" />
         <item itemvalue="Application._找零钱1" />
         <item itemvalue="Application._226_翻转二叉树" />
@@ -176,6 +170,7 @@
       <workItem from="1574332132794" duration="142000" />
       <workItem from="1574759943477" duration="8784000" />
       <workItem from="1574849033465" duration="8461000" />
+      <workItem from="1574904184171" duration="3673000" />
     </task>
     <servers />
   </component>

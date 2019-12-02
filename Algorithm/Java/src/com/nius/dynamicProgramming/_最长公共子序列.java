@@ -2,6 +2,7 @@ package com.nius.dynamicProgramming;
 
 // https://leetcode-cn.com/problems/longest-common-subsequence
 public class _最长公共子序列 {
+    // Longest Common subSequence
     // 给定两个字符串 text1 和 text2，返回这两个字符串的最长公共子序列。
     // 一个字符串的 子序列 是指这样一个新的字符串：它是由原字符串在不改变字符的相对顺序的情况下删除某些字符（也可以不删除任何字符）后组成的新字符串。
     // 例如，"ace" 是 "abcde" 的子序列，但 "aec" 不是 "abcde" 的子序列。两个字符串的「公共子序列」是这两个字符串所共同拥有的子序列。
@@ -23,5 +24,23 @@ public class _最长公共子序列 {
     // 1 <= text2.length <= 1000
     // 输入的字符串只含有小写英文字符。
 
+    // ------------------------------------------------------------------------
+    // ------------------------------------------------------------------------
+
+    public static void main(String[] args) {
+        // 例：text1 = "abcde", text2 = "ace"
+        // 1.定义状态
+
+        // 2.状态初始
+
+        // 3.状态转移方程
+
+        System.out.println(lcs("abcde", "ace"));
+    }
+
+    static int lcs(String text1, String text2) {
+
+        return 0;
+    }
 
 }
