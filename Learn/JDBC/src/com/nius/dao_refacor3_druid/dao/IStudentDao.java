@@ -1,8 +1,9 @@
-package com.nius.dao_refacor1.dao;
+package com.nius.dao_refacor3_druid.dao;
+
 
 import java.util.List;
 
-import com.nius.dao_refacor1.domain.Student;
+import com.nius.dao_refacor3_druid.domain.Student;
 
 public interface IStudentDao {
 	void save(Student stu);

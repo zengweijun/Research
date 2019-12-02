@@ -4,12 +4,11 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.nius.dao.dao.IStudentDao;
-import com.nius.dao.domain.Student;
+import com.nius.dao_refacor2.dao.IStudentDao;
+import com.nius.dao_refacor2.domain.Student;
 import com.nius.utils.JdbcDaoUtils;
 
 // 注意，这里操作的为预编译sql，预编译sql能预编缓存，性能良好

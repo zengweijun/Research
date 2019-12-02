@@ -3,7 +3,7 @@ package com.nius.dao_refacor2.dao;
 
 import java.util.List;
 
-import com.nius.dao.domain.Student;
+import com.nius.dao_refacor2.domain.Student;
 
 public interface IStudentDao {
 	void save(Student stu);
