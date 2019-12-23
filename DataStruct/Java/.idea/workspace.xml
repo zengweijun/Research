@@ -2,23 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9fa99ac7-235b-4bd3-8075-280cf9c51232" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../Algorithm/Java/src/com/nius/dynamicProgramming/_找零钱1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/nius/recursion/ClimbStairs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/nius/recursion/Fib.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/nius/recursion/Hanoi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/nius/recursion/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Algorithm/Java/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithm/Java/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Algorithm/Java/out/production/Java/com/nius/BinaryTree/_226_翻转二叉树.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithm/Java/out/production/Java/com/nius/BinaryTree/_226_翻转二叉树.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Algorithm/Java/out/production/Java/com/nius/BinaryTree/tree/BinaryTree$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithm/Java/out/production/Java/com/nius/BinaryTree/tree/BinaryTree$Node.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Algorithm/Java/out/production/Java/com/nius/BinaryTree/tree/BinaryTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithm/Java/out/production/Java/com/nius/BinaryTree/tree/BinaryTree.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Algorithm/Java/out/production/Java/com/nius/LinkedList/_206_反转链表.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithm/Java/out/production/Java/com/nius/LinkedList/_206_反转链表.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/META-INF/Java.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/com/nius/sort/SelectionSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/com/nius/sort/SelectionSort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/com/nius/sort/Sort$TestStableObj.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/com/nius/sort/Sort$TestStableObj.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/com/nius/sort/Sort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/com/nius/sort/Sort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nius/sort/SelectionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/sort/SelectionSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nius/sort/Sort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nius/sort/Sort.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -188,6 +172,9 @@
       <workItem from="1574225021643" duration="3709000" />
       <workItem from="1574648585761" duration="11242000" />
       <workItem from="1574825330855" duration="40000" />
+      <workItem from="1575344715857" duration="25000" />
+      <workItem from="1575344757673" duration="58000" />
+      <workItem from="1575381129645" duration="2000" />
     </task>
     <servers />
   </component>
